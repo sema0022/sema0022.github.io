@@ -1,79 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dash - Apply Now</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- Creating container for all content to ensure consistent margins -->
-    <div class="container">
-        <!-- Placing logo in the header area of the page -->
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dash - Apply Now</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <!-- Body elements organized according to order on mobile -->
+    <body> 
+
+        <!-- Placing logo in header area (always at the top across all devices) -->
         <header class="site-header">
             <img class="logo-img" src="images/logo/logo.png" alt="Dash logo">
         </header>
-        <!-- Placing all content between header and footer in main -->
-        <main class="main-content">
-            <!-- Grouping proposition statements together -->
+
+        <!-- Main container for aligning main items on page -->
+        <main class="main-container">
+            
+            <!-- Grouping proposition statements (always together across all devices) -->
             <section class="main-text">
                 <h1>Want to be your own boss?</h1>
                 <p>Start today and make up to $30/hr driving your own vehicle with Dash!</p>
             </section>
+
             <!-- Image of woman on a scooter will be used in the background -->
             <img class="background-img" src="images/bg-image/scooter.svg" alt="woman riding a scooter">
-            <!-- Creating the application form -->
-            <section class="app-form">
-                <form action="#" method="POST">
-                    <h2>Apply now</h2>
-                    <!-- Paragraph to be used for mobile and tablet -->
-                    <p class="short-para">Enter your info below.</p>
-                    <!-- Paragraph to be used for desktop -->
-                    <p class="long-para">Enter your info below to get started</p>
-                    <!-- Input areas with placeholder text. 
-                        Labels will be hidden -->
-                    <!-- User enters first name here -->
-                    <label for="firstname">First name</label>
-                    <input type="text" name="firstname" id="firstname" placeholder="First name">
-                    <!-- User enters last name here -->
-                    <label for="lastname">Last name</label>
-                    <input type="text" name="lastname" id="lastname" placeholder="Last name">
-                    <!-- User enters email address here -->
-                    <label for="email">Email address</label>
-                    <input type="email" name="email" id="email" placeholder="Email address">
-                    <!-- User enters phone number here -->
-                    <label for="phone">Phone number</label>
-                    <input type="tel" name="phone" id="phone" placeholder="Phone number">
-                    <!-- Checkbox for agreement to terms.
-                        Label placed after input -->
-                    <input type="checkbox" name="agree" id="agree">
-                    <label for="agree">I agree to dash terms</label>
-                    <!-- Button to submit the application -->
-                    <button type="submit">Drive with us</button>
-                    <!-- Link to check application status -->
-                    <p>Already applied? 
-                        <a href="#">Check your application status here</a>
-                    </p>
-                </form>
-            </section>
+            
+            <!-- Method of form is POST due to private info submission -->
+            <form action="#" method="POST">
+
+                <h2>Apply Now</h2>
+                
+                <!-- The paragraph displayed will depend on the device -->
+                <!-- Mobile and tablet paragraph -->
+                <p class="short-para">Enter your info below.</p>
+                <!-- Desktop paragraph -->
+                <p class="long-para">Enter your info below to get started</p>
+
+                <!-- Labels for input fields will be hidden. Placeholders will act as labels instead-->
+                <!-- User enters first name here -->
+                <label for="firstname">First name</label>
+                <input type="text" name="firstname" id="firstname" placeholder="First name">
+                <!-- User enters last name here -->
+                <label for="lastname">Last name</label>
+                <input type="text" name="lastname" id="lastname" placeholder="Last name">
+                <!-- User enters email address here -->
+                <label for="email">Email address</label>
+                <input type="email" name="email" id="email" placeholder="Email address">
+                <!-- User enters phone number here -->
+                <label for="phone">Phone number</label>
+                <input type="tel" name="phone" id="phone" placeholder="Phone number">
+                
+                <!-- Label placed after checkbox across all devices -->
+                <input type="checkbox" name="agree" id="agree">
+                <label for="agree">I agree to dash terms</label>
+
+                <!-- Button to submit the application -->
+                <button type="submit">Drive with us</button>
+
+                <!-- Link to check application status -->
+                <p>Already applied? 
+                    <a href="#">Check your application status here</a>
+                </p>
+
+            </form>
+
         </main>
+
         <!-- Footer contains form and social media icons/links -->
         <footer class="site-footer">
+
             <!-- Creating form to check possible earnings -->
             <form class="footer-form" action="#" method="GET">
-                <h3>See how much you can earn with Dash.</h3>
-                <p>how many hours do you want to drive with us this week?</p>
-                <!-- Input areas with placeholder text.
-                    Labels will be hidden -->
-                <!-- User enters desired hours here -->
-                <label for="hours">Hours</label>
-                <input type="number" name="hours" id="hours" placeholder="Hours">
-                <!-- User enters their city here -->
-                <label for="city">City</label>
-                <input type="text" name="city" id="city" placeholder="City">
-                <!-- Button to submit information and calculate earnings-->
-                <button type="submit">Calculate</button>
+
+                <!-- Grouping heading and paragraph (always together) -->
+                <div class="footer-text">
+                    <h3>See how much you can earn with Dash.</h3>
+                    <p>how many hours do you want to drive with us this week?</p>
+                </div>
+
+                <!-- Grouping input fields & button (layout changes depending on device) -->
+                <div class="footer-input">
+                    <!-- Labels for input fields will be hidden. Placeholders will act as labels instead-->  
+                    <!-- User enters desired hours here -->
+                    <label for="hours">Hours</label>
+                    <input type="number" name="hours" id="hours" placeholder="Hours">
+                    <!-- User enters their city here -->
+                    <label for="city">City</label>
+                    <input type="text" name="city" id="city" placeholder="City">
+                    <!-- Button to submit information and calculate earnings-->
+                    <button type="submit">Calculate</button>
+                </div>
+
             </form>
+
             <!-- Grouping social media icons/links -->
             <div class="footer-icons">
                 <a href="#" class="facebook">
@@ -89,7 +111,9 @@
                     <img src="images/icons/linkedin.svg" alt="linkedin icon">
                 </a>
             </div>
+
         </footer>
-    </div>
-</body>
+
+    </body>
+    
 </html>
