@@ -56,14 +56,13 @@ table {
 
 /* ***** Default Styles ***** */
 
-/* Setting overall font style; default sizing for body text */
+/* Setting overall font style, default sizing for body text */
 /* Applying box-sizing for accurate calculation of element sizes */
 html{
 font-family: 'Montserrat', sans-serif;
 color: #333131;
 font-size: 16px;
-
-background-color: #F7F7FF;
+line-height: 1.2;
 
 box-sizing: border-box;
 }
@@ -76,36 +75,46 @@ box-sizing: border-box;
     box-sizing: inherit;
 }
 
-/* Sizing all headings; adding spacing b/w headings and following paragraphs */
+/* Sizing all headings according to default font-size. All are bolded */
 h1{
     font-size: 3.75rem;
-    font-weight: bold;
-    margin-bottom: 0.3em; 
 }
 h2{
     font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 0.3em;
 }
 h3{
     font-size: 1.125rem;
+}
+h1, h2, h3{
     font-weight: bold;
-    margin-bottom: 0.3em;
+    margin-bottom: 0.2em;
 }
 
 /* ***** Header ***** */
 
-/* Sizing down logo image and putting more space b/w it and following content */
+/* Sizing down logo image and putting more space b/w header and main content */
+/* Side margins of 2rem will be consistent for all content */
 .logo-img{
     width: 7rem;
-    margin: 1rem 2.25rem;
+    margin: 1rem 2rem;
 }
 
 /* ***** Main Content ***** */
 
-/* Adding margin around main content */
+/* Adding consistent side margins around main content */
 .main-container{
-    margin: 0 2.25rem;
+    margin: 0 2rem;
+}
+
+/* Adding background image so it is centered and not cropped */
+body{
+    background:  #F7F7FF url(images/bg-image/scooter.svg) no-repeat center 40%;
+    background-size: 80%;
+}
+
+/* Adding considerable margin below main text so image is not hidden by content */
+.main-text{
+    margin-bottom: 100%;
 }
 
 /* Increasing size of proposition statement to complement heading */
@@ -113,18 +122,16 @@ h3{
     font-size: 1.5rem;
 }
 
-/* Giving image maximum width */
-.background-img{
-    max-width: 100%;
-}
-
 /* ***** Application Form ***** */
 
 /* Applying flexbox to form to create vertical layout */
+/* Adding minimum height in order to justify content */
 /* Giving the form a rounded rectangular base with a shadow */
 .app-form{
     display: flex;
-    flex-flow: column nowrap;
+    flex-direction: column;
+    min-height: 520px;
+    justify-content: space-between;
 
     background-color: #ffffff;
     border-radius: 26px;
@@ -134,21 +141,13 @@ h3{
 }
 
 /* Hiding longer paragraph that will be used for desktop */
-/* Hiding unnecessary input labels  */
+/* Hiding redundant input labels  */
 .long-para,
 .app-form > label{
     display: none;
 }
 
-/* Spacing out elements in form */
-.app-form p,
-.app-form > input,
-.app-button,
-.form-checkbox{
-    margin-top: 1rem;
-}
-
-/* Styling input fields */
+/* Making input areas into rounded rectangles with consistent font */
 .app-form > input{
     font-family: 'Montserrat', sans-serif;
     color: #9B9B9B;
@@ -160,7 +159,7 @@ h3{
     padding: 0.75rem;
 }
 
-/* Styling button */
+/* Making button into rounded rectangle with consistent font */
 .app-button{
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
@@ -174,16 +173,88 @@ h3{
     padding: 1rem;
 }
 
-/* Styling link to check application status */
-.app-form a:link,
-.app-form a:visited{
+/* Adding colour to make link stand out */
+.app-link:link,
+.app-link:visited{
     color: #FF8480;
+    text-decoration: none;
+}
+
+/* When the user hovers over/activates the link, it is underlined */
+.app-link:hover,
+.app-link:active{
+    text-decoration: underline;
 }
 
 /* ***** Footer ***** */
 
+/* Highlighting the footer with colour */
+/* Adding side padding consistent with side margins of above content */
 .site-footer{
     background-color: #FFFD8C;
-    margin: 0;
-    padding: 2.25rem;
+    padding: 1rem 2rem;
+}
+
+/* Applying a grid to lay out input areas and button*/
+.footer-input{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 0.5rem;
+    
+    margin: 0.5rem 0;
+}
+
+/* Making input areas into rounded rectangles with consistent font */
+#hours, #city{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #707070;
+
+    background-color: #F7F7FF;
+    border: none;
+    border-radius: 11px;
+
+    padding: 0.3rem 0.5rem;
+}
+
+/* Hiding redundant input labels */
+.footer-input label{
+    display: none;
+}
+
+/* Button spans the width of the grid container */
+/* Making it into a rounded rectangle with consistent font */
+.footer-input button{
+    grid-column: 1/span 3;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #F7F7FF;
+
+    background-color: #FF8480;
+    border: none;
+    border-radius: 11px;
+    
+    padding: 0.3rem;
+}
+
+/* Using flex to evenly distribute social media icons */
+.footer-icons{
+    display: flex;
+    justify-content: space-evenly;
+    
+    padding-top: 1rem;
+}
+
+/*  ********************************** 
+            Tablet Size
+*********************************** */
+
+/* Styling for screens between 700px and 1000px */
+@media screen and (min-width: 700px){
+
+    
 }
