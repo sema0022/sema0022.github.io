@@ -1,0 +1,189 @@
+/*  ********************************** 
+            CSS RESET
+*********************************** */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*  ********************************** 
+            Mobile First
+*********************************** */
+
+/* ***** Default Styles ***** */
+
+/* Setting overall font style; default sizing for body text */
+/* Applying box-sizing for accurate calculation of element sizes */
+html{
+font-family: 'Montserrat', sans-serif;
+color: #333131;
+font-size: 16px;
+
+background-color: #F7F7FF;
+
+box-sizing: border-box;
+}
+
+/* Box-sizing code */
+/* Referenced from MTM6130 IMDAC */
+*,
+*:before,
+*:after{
+    box-sizing: inherit;
+}
+
+/* Sizing all headings; adding spacing b/w headings and following paragraphs */
+h1{
+    font-size: 3.75rem;
+    font-weight: bold;
+    margin-bottom: 0.3em; 
+}
+h2{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.3em;
+}
+h3{
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-bottom: 0.3em;
+}
+
+/* ***** Header ***** */
+
+/* Sizing down logo image and putting more space b/w it and following content */
+.logo-img{
+    width: 7rem;
+    margin: 1rem 2.25rem;
+}
+
+/* ***** Main Content ***** */
+
+/* Adding margin around main content */
+.main-container{
+    margin: 0 2.25rem;
+}
+
+/* Increasing size of proposition statement to complement heading */
+.main-text p{
+    font-size: 1.5rem;
+}
+
+/* Giving image maximum width */
+.background-img{
+    max-width: 100%;
+}
+
+/* ***** Application Form ***** */
+
+/* Applying flexbox to form to create vertical layout */
+/* Giving the form a rounded rectangular base with a shadow */
+.app-form{
+    display: flex;
+    flex-flow: column nowrap;
+
+    background-color: #ffffff;
+    border-radius: 26px;
+    box-shadow: 5px 10px 15px rgba(51, 49, 49, 40%);
+    padding: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+/* Hiding longer paragraph that will be used for desktop */
+/* Hiding unnecessary input labels  */
+.long-para,
+.app-form > label{
+    display: none;
+}
+
+/* Spacing out elements in form */
+.app-form p,
+.app-form > input,
+.app-button,
+.form-checkbox{
+    margin-top: 1rem;
+}
+
+/* Styling input fields */
+.app-form > input{
+    font-family: 'Montserrat', sans-serif;
+    color: #9B9B9B;
+
+    background-color: #F4F4F5;
+    border: none;
+    border-radius: 11px;
+
+    padding: 0.75rem;
+}
+
+/* Styling button */
+.app-button{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    background-color: #57EEAB;
+    border: none;
+    border-radius: 11px;
+
+    padding: 1rem;
+}
+
+/* Styling link to check application status */
+.app-form a:link,
+.app-form a:visited{
+    color: #FF8480;
+}
+
+/* ***** Footer ***** */
+
+.site-footer{
+    background-color: #FFFD8C;
+    margin: 0;
+    padding: 2.25rem;
+}

@@ -29,7 +29,7 @@
             <img class="background-img" src="images/bg-image/scooter.svg" alt="woman riding a scooter">
             
             <!-- Method of form is POST due to private info submission -->
-            <form action="#" method="POST">
+            <form class="app-form" action="#" method="POST">
 
                 <h2>Apply Now</h2>
                 
@@ -53,12 +53,14 @@
                 <label for="phone">Phone number</label>
                 <input type="tel" name="phone" id="phone" placeholder="Phone number">
                 
-                <!-- Label placed after checkbox across all devices -->
-                <input type="checkbox" name="agree" id="agree">
-                <label for="agree">I agree to dash terms</label>
+                <!-- Grouping checkbox and label to keep together -->
+                <div class="form-checkbox">
+                    <input type="checkbox" name="agree" id="agree">
+                    <label for="agree">I agree to dash terms</label>
+                </div>
 
                 <!-- Button to submit the application -->
-                <button type="submit">Drive with us</button>
+                <button class="app-button" type="submit">Drive with us</button>
 
                 <!-- Link to check application status -->
                 <p>Already applied? 
@@ -115,5 +117,5 @@
         </footer>
 
     </body>
-    
+
 </html>
