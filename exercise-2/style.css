@@ -59,12 +59,12 @@ table {
 /* Setting overall font style, default sizing for body text */
 /* Applying box-sizing for accurate calculation of element sizes */
 html{
-font-family: 'Montserrat', sans-serif;
-color: #333131;
-font-size: 16px;
-line-height: 1.2;
+    font-family: 'Montserrat', sans-serif;
+    color: #333131;
+    font-size: 16px;
+    line-height: 1.2;
 
-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /* Box-sizing code */
@@ -87,7 +87,7 @@ h3{
 }
 h1, h2, h3{
     font-weight: bold;
-    margin-bottom: 0.2em;
+    margin-bottom: 0.5em;
 }
 
 /* ***** Header ***** */
@@ -96,7 +96,7 @@ h1, h2, h3{
 /* Side margins of 2rem will be consistent for all content */
 .logo-img{
     width: 7rem;
-    margin: 1rem 2rem;
+    margin: 2rem;
 }
 
 /* ***** Main Content ***** */
@@ -108,12 +108,14 @@ h1, h2, h3{
 
 /* Adding background image so it is centered and not cropped */
 body{
-    background:  #F7F7FF url(images/bg-image/scooter.svg) no-repeat center 40%;
+    background:  #F7F7FF url(images/bg-image/scooter.svg) no-repeat center 38%;
     background-size: 80%;
 }
 
+/* Constraining width of main text to match mockup */
 /* Adding considerable margin below main text so image is not hidden by content */
 .main-text{
+    max-width: 500px;
     margin-bottom: 100%;
 }
 
@@ -130,13 +132,13 @@ body{
 .app-form{
     display: flex;
     flex-direction: column;
-    min-height: 520px;
+    min-height: 550px;
     justify-content: space-between;
 
     background-color: #ffffff;
     border-radius: 26px;
     box-shadow: 5px 10px 15px rgba(51, 49, 49, 40%);
-    padding: 1.5rem;
+    padding: 2rem;
     margin-bottom: 3rem;
 }
 
@@ -150,6 +152,7 @@ body{
 /* Making input areas into rounded rectangles with consistent font */
 .app-form > input{
     font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
     color: #9B9B9B;
 
     background-color: #F4F4F5;
@@ -171,6 +174,7 @@ body{
     border-radius: 11px;
 
     padding: 1rem;
+    margin-bottom: 0.3rem;
 }
 
 /* Adding colour to make link stand out */
@@ -195,19 +199,21 @@ body{
     padding: 1rem 2rem;
 }
 
-/* Applying a grid to lay out input areas and button*/
+/* Applying a 2x2 grid to lay out input areas and button*/
 .footer-input{
     display: grid;
     grid-template-columns: 25% 75%;
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 0.5rem;
+    justify-content: center;
     
-    margin: 0.5rem 0;
+    margin: 1rem 0;
 }
 
 /* Making input areas into rounded rectangles with consistent font */
 #hours, #city{
     font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
     font-weight: 500;
     color: #707070;
 
@@ -223,10 +229,10 @@ body{
     display: none;
 }
 
-/* Button spans the width of the grid container */
+/* Button spans 3 columns to fall into/take up second row */
 /* Making it into a rounded rectangle with consistent font */
 .footer-input button{
-    grid-column: 1/span 3;
+    grid-column: span 3;
 
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
@@ -256,5 +262,166 @@ body{
 /* Styling for screens between 700px and 1000px */
 @media screen and (min-width: 700px){
 
+    /* ***** Default Styles ***** */
+
+    /* Increasing default font size for a larger screen */
+    html{
+        font-size: 17px;
+    }
+
+    /* ***** Header ***** */
+
+    /* Increasing side margins to 3rem, consistent for all content */
+    .logo-img{
+        margin: 2rem 3rem;
+    }
+
+    /* ***** Main Content ***** */
+
+    /* Making sure side margins are consistent for main content */
+    .main-container{
+        margin: 0 3rem;
+    }
+
+    /* ***** Footer ***** */
+
+    /* Making sure side padding is consistent with margins of content above */
+    .site-footer{
+        padding: 1rem 3rem;
+    }
+
+    /* Adjusting grid in footer to give items horizontal layout */
+    .footer-input{
+        grid-template-columns: 20% 50% 30%;
+        grid-template-rows: 1fr;
+    }
+
+    /* Reassigning position of button in grid so it fits properly in same row as input areas*/
+    .footer-input button{
+        grid-column: span 1;
+    }
+
+}
+
+/*  ********************************************** 
+            Laptop Size - Smaller
+************************************************** */
+
+/* Styling for screens between 1000px and 1650px */
+@media screen and (min-width: 1000px){
+ 
+    /* ***** Main Content ***** */
+
+    /* Using flex to lay out elements horizontally, with space between */
+    .main-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    /* Decreasing margin below main text to reduce height of main content area */
+    .main-text{
+        margin-bottom: 30%;
+    }
     
+    /* Giving more height to form so inner elements are more spaced out */
+    /* Applying limit on width so form doesn't cover image */
+    .app-form{
+        min-height: 600px;
+        max-width: 480px;
+    }
+
+    /* Hiding shorter paragraph that was used for smaller screens and showing longer paragraph*/
+    .short-para{
+        display: none;
+    }
+    .long-para{
+        display: inline;
+    }
+
+    /* Pushing background image to the left and reducing its size to fit page */
+    body{
+        background:  #F7F7FF url(images/bg-image/scooter.svg) no-repeat 25% 60%;
+        background-size: 50%;
+    }
+
+    /* ***** Footer ***** */
+
+    /* Using flex to lay out footer items horizontally and add space between */
+    .site-footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Setting width value for social icons group so they can be spaced between */
+    .footer-icons{
+        justify-content: space-between;
+
+        min-width: 200px;
+        height: fit-content;
+    }
+
+    /* Changing order of icons to match mockup */
+    .facebook{
+        order: 1;
+    }
+    .linkedin{
+        order: 2;
+    }
+    
+}
+
+/*  ********************************************** 
+            Laptop Size - Larger
+************************************************** */
+
+/* Styling for screens 1650px and wider */
+@media screen and (min-width: 1650px){
+
+    /* ***** Default Styles ***** */
+
+    /* Increasing default font size and line height for a larger screen */
+    html{
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+    /* ***** Header ***** */
+
+    /* Increasing side margins to 5rem, consistent for all content */
+    .logo-img{
+        margin: 2rem 5rem;
+    }
+
+    /* ***** Main Content ***** */
+
+    /* Making sure side margins are consistent for main content */
+    .main-container{
+        margin: 0 5rem;
+    }
+
+    /* Increasing limit on width (applied so form doesn't cover image) */
+    .app-form{
+        max-width: 530px;
+    }
+
+    /* Centering background image */
+    body{
+        background:  #F7F7FF url(images/bg-image/scooter.svg) no-repeat center;
+        background-size: 50%;
+    }
+
+    /* ***** Footer ***** */
+
+    /* Making sure side padding is consistent with margins of content above */
+    .site-footer{
+        padding: 1rem 5rem;
+    }
+
+    /* Increasing width value (applied so items can be spaced between) */
+    .footer-icons{
+        min-width: 300px;
+    }
+
 }
