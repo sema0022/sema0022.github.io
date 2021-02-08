@@ -108,7 +108,7 @@ h1, h2, h3{
 
 /* Adding background image so it is centered and not cropped */
 body{
-    background:  #F7F7FF url(images/bg-image/scooter.svg) no-repeat center 38%;
+    background:  #F7F7FF url(../images/bg-image/scooter.svg) no-repeat center 38%;
     background-size: 80%;
 }
 
@@ -341,7 +341,7 @@ body{
 
     /* Pushing background image to the left and reducing its size to fit page */
     body{
-        background:  #F7F7FF url(images/bg-image/scooter.svg) no-repeat 25% 60%;
+        background:  #F7F7FF url(../images/bg-image/scooter.svg) no-repeat 25% 60%;
         background-size: 50%;
     }
 
@@ -408,7 +408,7 @@ body{
 
     /* Centering background image */
     body{
-        background:  #F7F7FF url(images/bg-image/scooter.svg) no-repeat center;
+        background:  #F7F7FF url(../images/bg-image/scooter.svg) no-repeat center;
         background-size: 50%;
     }
 
