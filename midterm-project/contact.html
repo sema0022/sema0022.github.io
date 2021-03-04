@@ -1,4 +1,6 @@
-<!-- CONTACT PAGE -->
+<!-------------------------- 
+        CONTACT PAGE 
+--------------------------->
 
 <!DOCTYPE html>
 
@@ -9,20 +11,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Linking normalize code - to set default styles across all browsers -->
+    <!-- Linking normalize code to set default styles across all browsers -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
     
     <!-- Linking to Google Font - Raleway (Regular, Semi-bold, Semi-bold Italic, Bold, Bold Italic) -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">            
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">  
+    
+    <!-- Linking to icon fonts from Font Awesome -->
+    <script src="https://kit.fontawesome.com/87ce8f39f3.js" crossorigin="anonymous"></script>
     
     <!-- Linking CSS stylesheet -->
     <link rel="stylesheet" href="css/style.css">
+
     <title>ARC - Contact</title>
 </head>
 
 <body>
-    
+    <!-- Adding id of "top" to be referenced by the "back to top" button in the footer -->
+    <header id="top">
+        <!-- Applying class of "wrapper" to header content to maintain consistent margins -->
+        <!-- Header area contains both logo and navigation, across all devices -->
+        <div class="wrapper">
+            <img src="images/logo.svg" alt="ARC logo">
+            
+            <nav>
+                <!-- Adding class of "current-page" to emphasize page being currently viewed (Contact) -->
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a class="current-page" href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Applying class of "wrapper" to main content to maintain consistent margins -->
+    <main class="wrapper">
+        
+    </main>
+
+    <footer>
+        <!-- Applying class of "wrapper" to footer content to maintain consistent margins -->
+        <!-- Adding class "footer-content" for easy access to the container, for layout purposes -->
+        <div class="wrapper footer-content">
+            <!-- Grouping social media information and back-to-top arrow separately -->
+            <div class="follow">
+                <p>Follow us</p>
+
+                <img src="icons/facebook.svg" alt="Facebook icon">
+                <img src="icons/instagram.svg" alt="Instragram icon">
+                <img src="icons/twitter.svg" alt="Twitter icon">
+                <img src="icons/youtube.svg" alt="YouTube icon">
+            </div>
+
+            <div class="to-top">
+                <!-- When pressed, arrow takes the user back to header area -->
+                <a href="#top">
+                    <img class="top-arrow" src="icons/arrow.svg" alt="upward arrow icon">
+                </a>
+
+                <p>back to top</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
