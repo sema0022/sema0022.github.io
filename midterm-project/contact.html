@@ -1,6 +1,4 @@
-<!-------------------------- 
-        CONTACT PAGE 
---------------------------->
+<!-- CONTACT PAGE  -->
 
 <!DOCTYPE html>
 
@@ -46,7 +44,55 @@
 
     <!-- Applying class of "wrapper" to main content to maintain consistent margins -->
     <main class="wrapper">
-        
+        <!-- Creating section for feedback area -->
+        <section class="feedback">
+            <!-- Separating the text & image from the form to reflect their grouping in the desktop layout -->
+            <div class="feedback-info">
+                <h1>We Want to Hear From You </h1>
+                <p>
+                    If you have an idea for an activity that you think you and your fellow students would love to participate in that we are not already offering, we want to know about it!
+                </p>
+
+                <img src="images/contact-img.svg" alt="two figures are looking at their phones in front of message, email, and phone icons">
+            </div>
+
+            <form class="feedback-form" action="#" method="POST">
+                <h2>Contact us.</h2>
+
+                <!-- User enters full name here -->
+                <label for="fullname">Full Name</label>
+                <input type="text" name="fullname" id="fullname" placeholder="Full Name">
+                <!-- User enters student number here -->
+                <label for="studentnumber">Student Number</label>
+                <input type="text" name="studentnumber" id="studentnumber" placeholder="Student Number">
+                <!-- User enters email here -->
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email">
+                <!-- User enters message here -->
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+
+                <!-- Using an anchor tag for the submit button to make styling easier -->
+                <a class="contact-btn" href="#">Submit</a>
+            </form>
+        </section>
+
+        <!-- Creating a section for "Location" -->
+        <section class="location">
+            <!-- Separating the info from the map to reflect their grouping in the desktop layout -->
+            <div class="location-info">
+                <h2>Our Location.</h2>
+                <h3>Algonquin College Students' Association</h3>
+                <p>Monday to Friday - 8:30am to 6:00pm</p>
+                <p>1385 Woodroffe Avenue (E114)</p>
+                <p>Ottawa, Ontario</p>
+                <p>K2G 1V8</p>
+                <p>(613) 727-4723 x7711</p>
+            </div>
+
+            <!-- Embedding map from Google Maps -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2804.039149426826!2d-75.75911148457394!3d45.348021979099826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20%E2%80%93%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1614980153945!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
     </main>
 
     <footer>
