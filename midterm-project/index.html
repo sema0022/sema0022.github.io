@@ -11,14 +11,11 @@
 
     <!-- Linking normalize code to set default styles across all browsers -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
-    
     <!-- Linking to Google Font - Raleway (Regular, Semi-bold, Semi-bold Italic, Bold, Bold Italic) -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">  
-    
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">      
     <!-- Linking to icon fonts from Font Awesome -->
-    <script src="https://kit.fontawesome.com/87ce8f39f3.js" crossorigin="anonymous"></script>
-    
+    <script src="https://kit.fontawesome.com/87ce8f39f3.js" crossorigin="anonymous"></script>    
     <!-- Linking CSS stylesheet -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -26,15 +23,13 @@
 </head>
 
 <body>
-    <!-- Adding id of "top" to be referenced by the "back to top" button in the footer -->
+    <!-- "Back to top" button in the footer brings users back to the header with id "top" -->
     <header id="top">
-        <!-- Applying class of "wrapper" to header content to maintain consistent margins -->
-        <!-- Header area contains both logo and navigation, across all devices -->
+        <!-- Adding class of "wrapper" to header content in order to assign consistent margins -->
         <div class="wrapper">
+            <!-- Header with logo and navigation are the same across all pages -->
             <img src="images/logo.svg" alt="ARC logo">
-            
             <nav>
-                <!-- Adding class of "current-page" to emphasize page being currently viewed (Home) -->
                 <a class="current-page" href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
@@ -42,18 +37,17 @@
         </div>
     </header>
 
-    <!-- Applying class of "wrapper" to main content to maintain consistent margins -->
+    <!-- Adding class of "wrapper" to assign same margins to main content -->
     <main class="wrapper">
-        <!-- Dividing content into manageable sections, starting with "Discover Your ARC" -->
+        <!-- Content within all the following sections will be separated into divs for "info" and "image", to facilitate horizontal layouts on screens wider than mobile -->
+        <!-- Starting with section for "Discover Your ARC" -->
         <section class="discover">
-            <!-- Separating content into "-info" and "-image" to facilitate desktop layout -->
-            <div class="discover-info">
+            <div class="info">
                 <h1>Discover your ARC.</h1>
                 <p>
                     With Algonquin College's newest facility, there's always something for everyone to discover and enjoy!
                 </p>
-
-                <!-- Grouping activity icons in a container to facilitate their layout across devices -->
+                <!-- Placing activity icons in their own container to apply different layouts across devices -->
                 <div class="activities">
                     <div>
                         <i class="fas fa-bowling-ball"></i>
@@ -72,81 +66,71 @@
                         <p>Indoor Court</p>
                     </div>
                 </div>
-                
-                <!-- Giving button class of "start-btn" to give it a particular style -->
                 <a class="start-btn" href="#">Get Started</a>
             </div>
             
-            <div class="discover-image">
+            <div class="image">
                 <img src="images/discover.svg" alt="a person sitting on a stack of books and reading">
             </div>
         </section>
 
-        <!-- Creating a section for "Discover-Algonquin College" -->
+        <!-- Section for "Discover - Algonquin College" -->
         <section class="college">
-            <!-- Separating content into "-image" and "-info" to facilitate desktop layout -->
-            <div class="college-image">
+            <div class="image">
                 <img src="images/school.jpg" alt="a group of graduates on a hill throw their caps in the air">
             </div>
 
-            <div class="college-info">
-                <!-- Jumping to h3 since there are larger headings on other pages that are h2 -->
+            <div class="info">
+                <!-- Jumping from h1 to h3, since other pages have larger headings that can be styled as h2 -->
                 <h3>Discover.</h3>
                 <h4>Algonquin College</h4>
                 <p>
                     of Applied Arts and Technology is a publicly funded English-language college located in Ottawa, Ontario, Canada. The college serves the National Capital Region and the outlying areas of Eastern Ontario, Western Quebec, and Upstate New York.
                 </p>
-
-                <!-- Adding class of "small-btn" to all of the smaller buttons on the page -->
                 <a class="small-btn" href="#">Learn More</a>
             </div>
         </section>
 
-        <!-- Creating a section for "SA President" -->
+        <!-- Section for "SA President" -->
         <section class="president">
-            <!-- Separating content into "-image" and "-info" to facilitate desktop and tablet layouts -->
-            <!-- Grouping image and headings, since they tend to stay together across devices -->
-            <div class="president-image">
+            <!-- Grouping the image with the headings, since they stay together across all devices -->
+            <div class="image">
                 <img src="images/simon.jpg" alt="Dijanelle Simon, the President of the Students' Association">
                 <h3>Dijanelle Simon</h3>
                 <h3>SA President</h3>
             </div>
 
-            <div class="president-info">
+            <!-- Other text is grouped separately to facilitate transition to horizontal layout on tablet and desktop -->
+            <div class="info">
                 <p>
                     "Only with increased capacity can we expand and create a more inclusive program that attracts a greater number of students to participate in physical and social activity. The Students' Association is committed to and focused on programming that results in our students taking person ownership for their health."
                 </p>
             </div>
         </section>
 
-        <!-- Creating a section for "Discover-The entertainment" -->
+        <!-- Section for "Discover - The Entertainment" -->
         <section class="entertainment">
-            <!-- Separating content into "-info" and "-image" to facilitate desktop layout -->
-            <div class="entertainment-image">
+            <div class="image">
                 <img src="images/entertainment.jpg" alt="a woman in a bar clinks glasses with a couple other patrons">
             </div>
 
-            <div class="entertainment-info">
+            <div class="info">
                 <h3>Discover.</h3>
                 <h4>The entertainment</h4>
                 <p>
                     at Algonquin College is endless. We currently have the Algonquin Commons Theatre where we host a variety of events. Now with the coming of the ARC facility, not only will it be providing more space for the students to study, but it will also be bringing in more room for late-night entertainment.
                 </p>
-
-                <!-- Another small button -->
                 <a class="small-btn" href="#">Learn More</a>
             </div>
         </section>
     </main>
 
     <footer>
-        <!-- Applying class of "wrapper" to footer content to maintain consistent margins -->
-        <!-- Adding class "footer-content" for easy access to the container, for layout purposes -->
+        <!-- Adding class of "wrapper" to assign same margins to footer content -->
         <div class="wrapper footer-content">
-            <!-- Grouping social media information and back-to-top arrow separately -->
+            <!-- Separating social media information and back-to-top arrow, since they have different alignment -->
             <div class="follow">
                 <p>Follow us</p>
-
                 <img src="icons/facebook.svg" alt="Facebook icon">
                 <img src="icons/instagram.svg" alt="Instragram icon">
                 <img src="icons/twitter.svg" alt="Twitter icon">
@@ -158,7 +142,6 @@
                 <a href="#top">
                     <img class="top-arrow" src="icons/arrow.svg" alt="upward arrow icon">
                 </a>
-
                 <p>back to top</p>
             </div>
         </div>

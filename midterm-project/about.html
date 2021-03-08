@@ -10,15 +10,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Linking normalize code to set default styles across all browsers -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />    
     <!-- Linking to Google Font - Raleway (Regular, Semi-bold, Semi-bold Italic, Bold, Bold Italic) -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">  
-    
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">      
     <!-- Linking to icon fonts from Font Awesome -->
-    <script src="https://kit.fontawesome.com/87ce8f39f3.js" crossorigin="anonymous"></script>
-    
+    <script src="https://kit.fontawesome.com/87ce8f39f3.js" crossorigin="anonymous"></script>    
     <!-- Linking CSS stylesheet -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -26,15 +23,13 @@
 </head>
 
 <body>
-    <!-- Adding id of "top" to be referenced by the "back to top" button in the footer -->
+    <!-- "Back to top" button in the footer brings users back to the header with id "top" -->
     <header id="top">
-        <!-- Applying class of "wrapper" to header content to maintain consistent margins -->
-        <!-- Header area contains both logo and navigation, across all devices -->
+        <!-- Adding class of "wrapper" to header content in order to assign consistent margins -->
         <div class="wrapper">
-            <img src="images/logo.svg" alt="ARC logo">
-            
+            <!-- Header with logo and navigation are the same across all pages -->
+            <img src="images/logo.svg" alt="ARC logo">            
             <nav>
-                <!-- Adding class of "current-page" to emphasize page being currently viewed (About) -->
                 <a href="index.html">Home</a>
                 <a class="current-page" href="about.html">About</a>
                 <a href="contact.html">Contact</a>
@@ -42,12 +37,12 @@
         </div>
     </header>
 
-    <!-- Applying class of "wrapper" to main content to maintain consistent margins -->
+    <!-- Adding class of "wrapper" to assign same margins to main content -->
     <main class="wrapper">
-        <!-- Dividing content into manageable sections, starting with "What to expect (construction)" -->
+        <!-- Content within most of the following sections will be separated into divs for "info" and "image", to facilitate horizontal layouts on screens wider than mobile -->
+        <!-- Starting with section for "What to expect during construction" -->
         <section class="construction">
-            <!-- Separating content into "-info" and "-image" to facilitate desktop layout -->
-            <div class="construction-info">
+            <div class="info">
                 <h1>What to expect during construction.</h1>
                 <p>
                     With construction starting in April 2019 we anticipate the new arrival of the ARC building as early as August 2021.
@@ -57,29 +52,28 @@
                 </p>
             </div>
 
-            <div class="construction-image">
+            <div class="image">
                 <img src="images/construction.svg" alt="two construction workers carry wooden beams and stand inside the wooden frame of a house">
             </div>
         </section>
 
-        <!-- Creating "About" section -->
+        <!-- Section for "About" -->
         <section class="about">
             <h2>About</h2>
-
-            <!-- Grouping paragraphs with their respective headings to help with desktop layout -->
-            <div class="who">
+            <!-- Grouping paragraphs with their respective headings so they stay together in the horizontal desktop layout -->
+            <div>
                 <h3>Who</h3>
                 <p>
                     is ARC? We are the Athletics & Recreation Centre. This is an exciting venture for our Algonquin Community.  This facility will provide our students with a place to break through perceptual barriers in a welcoming, safe, inclusive and inviting environment for students of all backgrounds, cultures and abilities to spark a movement.
                 </p>
             </div>
-            <div class="what">
+            <div>
                 <h3>What</h3>
                 <p>
                     is this going to cost me? This facility will be included in your activity fee. All fee-paying students can use and participate in all activities in the building. As for the facility, it will cost Algonquin College $48.8 million.
                 </p>
             </div>
-            <div class="where">
+            <div>
                 <h3>Where</h3>
                 <p>
                     will the ARC building be? The ARC building will be located northeast of the Student Commons building, opposite of the residence. The facility will be an estimated 100,000 square feet! Connected to the Student Commons by a "Plus 15" Pedestrian Link. 
@@ -89,16 +83,14 @@
 
         <!-- Beginning of "Services" area-->
         <h2>Services</h2>
-        
         <!-- Creating sections for each "Service", starting with "Restaurant & Lounge" -->
         <section class="restaurant">
-            <!-- Separating content into "-image" and "-info" to facilitate layouts on all devices -->
             <!-- Adding class "hide" to all images that will be hidden on mobile -->
-            <div class="restaurant-image hide">
+            <div class="image hide">
                 <img src="images/bar.jpg" alt="a bar with wooden counter and stools, and shelves lined with glass bottles">
             </div>
 
-            <div class="restaurant-info">
+            <div class="info">
                 <h3>Need a break?</h3>
                 <h4>Restaurant & Lounge</h4>
                 <p>
@@ -107,10 +99,9 @@
             </div>
         </section>
         
-        <!-- Creating section for "Bowling Lanes" -->
+        <!-- Section for "Bowling Lanes" -->
         <section class="bowling">
-            <!-- Separating content into "-info" and "-image" to facilitate layouts on all devices -->
-            <div class="bowling-info">
+            <div class="info">
                 <h3>Competitive friends?</h3>
                 <h4>Bowling lanes</h4>
                 <p>
@@ -119,28 +110,25 @@
             </div>
 
             <!-- Image will be hidden on mobile -->
-            <div class="bowling-image hide">
+            <div class="image hide">
                 <img src="images/bowling.jpg" alt="a close-up of a person's bowling shoes from behind as they face the alley">
             </div>
         </section>
 
-        <!-- An aside to promote a newsletter -->
+        <!-- An aside (relevant, but unrelated content) to promote a newsletter -->
         <aside class="newsletter">
             <p>Keep up to date with our newsletter</p>
-
-            <!-- This button will share the style for "small-btn" -->
             <a class="small-btn" href="#">Subscribe</a>
         </aside>
 
-        <!-- Creating section for "Fitness Rooms" -->
+        <!-- Section for "Fitness Rooms" -->
         <section class="fitness">
-            <!-- Separating content into "-image" and "-info" to facilitate layouts on all devices -->
             <!-- Image will be hidden on mobile -->
-            <div class="fitness-image hide">
+            <div class="image hide">
                 <img src="images/fitness.jpg" alt="a person crouches in order to lift a heavy weight">
             </div>
 
-            <div class="fitness-info">
+            <div class="info">
                 <h3>New year, new me</h3>
                 <h4>Fitness rooms</h4>
                 <p>
@@ -149,10 +137,9 @@
             </div>
         </section>
 
-        <!-- Creating section for "Rock Climbing" -->
+        <!-- Section for "Rock Climbing" -->
         <section class="climbing">
-             <!-- Separating content into "-info" and "-image" to facilitate layouts on all devices -->
-             <div class="climbing-info">
+             <div class="info">
                  <h3>Indoor climbing?</h3>
                  <h4>Rock climbing</h4>
                  <p>
@@ -161,16 +148,15 @@
              </div>
 
              <!-- Image will be hidden on mobile -->
-             <div class="climbing-image">
+             <div class="image">
                  <img src="images/climbing.jpg" alt="a woman is rock-climbing indoors">
              </div>
         </section>
 
-        <!-- Creating a section for "Sponsors" -->
+        <!-- Section for "Sponsors" -->
         <section class="sponsor">
-            <!-- Grouping text and images separately to help with horizontal desktop layout of logos -->
-            <h2 class="sponsor-text">Special thank you to the following</h2>
-
+            <h2>Special thank you to the following</h2>
+            <!-- Placing sponsor logos in their own container to apply different layouts across devices -->
             <div class="sponsor-logos">
                 <img src="images/sa.png" alt="Algonquin College Students' Association logo">
                 <img src="images/AC_ICON_FC_GRN_240x200.png" alt="Algonquin College logo">
@@ -181,13 +167,11 @@
     </main>
 
     <footer>
-        <!-- Applying class of "wrapper" to footer content to maintain consistent margins -->
-        <!-- Adding class "footer-content" for easy access to the container, for layout purposes -->
+        <!-- Adding class of "wrapper" to assign same margins to footer content -->
         <div class="wrapper footer-content">
-            <!-- Grouping social media information and back-to-top arrow separately -->
+            <!-- Separating social media information and back-to-top arrow, since they have different alignment -->
             <div class="follow">
                 <p>Follow us</p>
-
                 <img src="icons/facebook.svg" alt="Facebook icon">
                 <img src="icons/instagram.svg" alt="Instragram icon">
                 <img src="icons/twitter.svg" alt="Twitter icon">
@@ -199,7 +183,6 @@
                 <a href="#top">
                     <img class="top-arrow" src="icons/arrow.svg" alt="upward arrow icon">
                 </a>
-
                 <p>back to top</p>
             </div>
         </div>
