@@ -26,9 +26,9 @@
     <!-- "Back to top" button in the footer brings users back to the header with id "top" -->
     <header id="top">
         <!-- Adding class of "wrapper" to header content in order to assign consistent margins -->
-        <div class="wrapper">
+        <div class="navbar wrapper">
             <!-- Header with logo and navigation are the same across all pages -->
-            <img src="images/logo.svg" alt="ARC logo">            
+            <img class="logo" src="images/logo.svg" alt="ARC logo">            
             <nav>
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
@@ -37,10 +37,10 @@
         </div>
     </header>
 
-    <!-- Adding class of "wrapper" to assign same margins to main content -->
-    <main class="wrapper">
+    <main>
         <!-- Section for feedback area -->
-        <section class="feedback">
+        <!-- Adding class of "wrapper" to assign consistent margins to content -->
+        <section class="feedback wrapper">
             <!-- Separating the text & image from the form to reflect their grouping in the desktop layout -->
             <div class="feedback-info">
                 <h1>We Want to Hear From You </h1>
@@ -72,7 +72,7 @@
         <!-- Section for "Location" -->
         <section class="location">
             <!-- Separating the info from the map to reflect their grouping in the desktop layout -->
-            <div class="info">
+            <div class="info wrapper">
                 <h2>Our Location.</h2>
                 <h3>Algonquin College Students' Association</h3>
                 <p>Monday to Friday - 8:30am to 6:00pm</p>
