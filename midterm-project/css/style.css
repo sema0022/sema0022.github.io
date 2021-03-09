@@ -1,0 +1,100 @@
+/* *********************************
+            Default Styles 
+********************************* */
+
+/* Creating CSS variables for easier access to site color palette */
+:root{
+    --primary-color: #26A682;
+    --secondary-color: #3C3B3A;
+    --accent-color: #F2F2F2;
+}
+
+/* Setting default font size according to mobile screen size */
+/* Applying box-sizing to calculate element sizing more intuitively */
+html{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: var(--secondary-color);
+    box-sizing: border-box;
+}
+p{
+    line-height: 1.5rem;
+}
+
+/* Box-sizing code - Referenced from MTM6130 IMDAC */
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+/* Adjusting typographic scale of headings to match mock-up */
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2.5rem;
+}
+h3{
+    font-size: 2rem;
+}
+/* h4 is always green and regular weight */
+h4{
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: var(--primary-color);
+}
+
+/* Making sure all images are responsive across different screen sizes */
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Creating space around content and centering it */
+.wrapper{
+    width: 85%;
+    margin: auto;
+}
+
+/* *********************************
+            Mobile Styles 
+********************************* */
+
+/* ******** HOME PAGE ******** */
+
+/* Decreasing logo size to fit mobile screens and centering it */
+.logo{
+    width: 5.5rem;
+    margin: 0 auto;
+}
+
+/* Using flex to create vertical navigation */
+.navbar,
+.navbar nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+header{
+    background-color: var(--secondary-color);
+}
+
+nav a:link,
+nav a:visited{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--accent-color);
+    padding: 1rem;
+}
+
+nav a:hover,
+nav a:active{
+    text-decoration: underline;
+}
+
+.current-page{
+    font-weight: bold;
+}
