@@ -13,12 +13,9 @@
 /* Applying box-sizing to calculate element sizing more intuitively */
 html{
     font-family: 'Raleway', sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     color: var(--secondary-color);
     box-sizing: border-box;
-}
-p{
-    line-height: 1.5rem;
 }
 
 /* Box-sizing code - Referenced from MTM6130 IMDAC */
@@ -28,6 +25,18 @@ p{
     box-sizing: inherit;
 }
 
+/* Creating space around content and centering it */
+.wrapper{
+    width: 85%;
+    margin: auto;
+}
+
+/* Adding space between every content section */
+section,
+aside{
+    padding-bottom: 2rem;
+}
+
 /* Adjusting typographic scale of headings to match mock-up */
 h1{
     font-size: 3rem;
@@ -35,14 +44,25 @@ h1{
 h2{
     font-size: 2.5rem;
 }
+/* Decreasing margins of h3 and h4 because they're often grouped close together as heading and subheading */
+/* h3 is most often italic */
 h3{
     font-size: 2rem;
+    font-style: italic;
+    margin: 1rem 0;
 }
 /* h4 is always green and regular weight */
 h4{
     font-size: 1.5rem;
     font-weight: normal;
     color: var(--primary-color);
+    margin: 0;
+}
+
+/* Decreasing top margins of paragraphs, as they often flow directly from h4 */
+p{
+    line-height: 1.5rem;
+    margin-top: 0.5rem;
 }
 
 /* Making sure all images are responsive across different screen sizes */
@@ -52,17 +72,13 @@ img{
     height: auto;
 }
 
-/* Creating space around content and centering it */
-.wrapper{
-    width: 85%;
-    margin: auto;
-}
-
 /* *********************************
             Mobile Styles 
 ********************************* */
 
 /* ******** HOME PAGE ******** */
+
+/* Header Area */
 
 /* Decreasing logo size to fit mobile screens and centering it */
 .logo{
@@ -76,12 +92,14 @@ img{
     display: flex;
     flex-direction: column;
     text-align: center;
+    padding: 0.5rem;
 }
 
 header{
     background-color: var(--secondary-color);
 }
 
+/* When the navigation links are visited, their style should match the regular, univisited state */
 nav a:link,
 nav a:visited{
     font-size: 1.2rem;
@@ -90,11 +108,147 @@ nav a:visited{
     padding: 1rem;
 }
 
+/*  */
 nav a:hover,
 nav a:active{
     text-decoration: underline;
 }
 
+/* Whenever a page is visited, its corresponding navigation link is emphasized to let the user know where they are */
 .current-page{
     font-weight: bold;
+}
+
+/* Section - Discover you ARC  */
+
+/* Increasing size of activity font icons to make them stand out more */
+.fas{
+    font-size: 2.5rem;
+}
+
+/* Using grid to create a 2-column layout for activity icons. The default auto-flow creates a second row */
+.activities{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Center-aligning both text and icons for activities */
+.activities div{
+    text-align: center;
+}
+
+/* Styling button links as block elements to adjust size and to position */
+/* Large call-to-action button */
+.start-btn:link,
+.start-btn:visited{
+    display: block;
+    max-width: 10em;
+    margin: 1rem auto 2rem auto;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    color: var(--accent-color);
+    background-color: var(--primary-color);
+    border-radius: 40px;
+    box-shadow: 0 10px 10px rgba(18, 74, 58, 50%);
+}
+
+/* Small call-to-action button */
+.small-btn:link,
+.small-btn:visited{
+    display: block;
+    max-width: 8em;
+    margin: 2rem 0 1rem auto;
+    padding: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    color: var(--accent-color);
+    background-color: var(--primary-color);
+    border-radius: 40px;
+    box-shadow: 0 10px 10px rgba(18, 74, 58, 50%);
+}
+
+/*  */
+.start-btn:hover,
+.start-btn:active,
+.small-btn:hover,
+.small-btn:active{
+    text-decoration: underline;
+}
+
+/* Section - SA President */
+
+/* Inverting text and background colour to create a coloured section block */
+.president{
+    color: var(--accent-color);
+    background-color: var(--secondary-color);
+    padding-top: 2rem;
+}
+
+/* Increasing border radius to give the image a circular appearance */
+.president img{
+    border-radius: 250px;
+    border: 5px solid var(--accent-color);
+    max-width: 60%;
+    margin: auto;
+}
+
+.president h3{
+    font-style: normal;
+    text-align: center;
+}
+
+/* Footer Area */
+
+/* Using flex to horizontally space/position the social icons and back-to-top button */
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: var(--accent-color);
+    background-color: var(--secondary-color);
+    padding: 2rem 1.5rem;
+}
+
+/* Using flex again with the social icons to space them out horizontally */
+.follow{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 50%;
+    margin: auto;
+}
+
+/* Setting flex-basis on the paragraph so that the icons wrap beneath */
+.follow p{
+    flex-basis: 100%;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* Decreasing the size of back-to-top icon so that it's less dominant */
+.to-top img{
+    width: 30%;
+    margin: auto;
+}
+
+.to-top p{
+    font-size: 0.8rem;
+}
+
+/* ******** ABOUT PAGE ******** */
+
+.about-heading{
+    background: var(--secondary-color) url(../images/about.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.about-heading h2{
+    text-align: center;
+    color: var(--accent-color);
+    background-color: rgba(0, 90, 65, 0.6);
 }
