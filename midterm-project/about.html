@@ -37,11 +37,11 @@
         </div>
     </header>
 
-    <!-- Adding class of "wrapper" to assign same margins to main content -->
-    <main class="wrapper">
+    <main>
         <!-- Content within most of the following sections will be separated into divs for "info" and "image", to facilitate horizontal layouts on screens wider than mobile -->
+        <!-- Adding class of "wrapper" only to content maintaining consistent margin (for example, some images must span the entire width of the screen) -->
         <!-- Starting with section for "What to expect during construction" -->
-        <section class="construction">
+        <section class="construction wrapper">
             <div class="info">
                 <h1>What to expect during construction.</h1>
                 <p>
@@ -59,21 +59,23 @@
 
         <!-- Section for "About" -->
         <section class="about">
-            <h2>About</h2>
+            <div class="about-heading">
+                <h2>About</h2>
+            </div>
             <!-- Grouping paragraphs with their respective headings so they stay together in the horizontal desktop layout -->
-            <div>
+            <div class="wrapper">
                 <h3>Who</h3>
                 <p>
                     is ARC? We are the Athletics & Recreation Centre. This is an exciting venture for our Algonquin Community.  This facility will provide our students with a place to break through perceptual barriers in a welcoming, safe, inclusive and inviting environment for students of all backgrounds, cultures and abilities to spark a movement.
                 </p>
             </div>
-            <div>
+            <div class="wrapper">
                 <h3>What</h3>
                 <p>
                     is this going to cost me? This facility will be included in your activity fee. All fee-paying students can use and participate in all activities in the building. As for the facility, it will cost Algonquin College $48.8 million.
                 </p>
             </div>
-            <div>
+            <div class="wrapper">
                 <h3>Where</h3>
                 <p>
                     will the ARC building be? The ARC building will be located northeast of the Student Commons building, opposite of the residence. The facility will be an estimated 100,000 square feet! Connected to the Student Commons by a "Plus 15" Pedestrian Link. 
@@ -82,9 +84,11 @@
         </section>
 
         <!-- Beginning of "Services" area-->
-        <h2>Services</h2>
+        <div class="services-heading">
+            <h2>Services</h2>
+        </div>
         <!-- Creating sections for each "Service", starting with "Restaurant & Lounge" -->
-        <section class="restaurant">
+        <section class="restaurant wrapper">
             <!-- Adding class "hide" to all images that will be hidden on mobile -->
             <div class="image hide">
                 <img src="images/bar.jpg" alt="a bar with wooden counter and stools, and shelves lined with glass bottles">
@@ -100,7 +104,7 @@
         </section>
         
         <!-- Section for "Bowling Lanes" -->
-        <section class="bowling">
+        <section class="bowling wrapper">
             <div class="info">
                 <h3>Competitive friends?</h3>
                 <h4>Bowling lanes</h4>
@@ -117,12 +121,14 @@
 
         <!-- An aside (relevant, but unrelated content) to promote a newsletter -->
         <aside class="newsletter">
-            <p>Keep up to date with our newsletter</p>
-            <a class="small-btn" href="#">Subscribe</a>
+            <div class="wrapper">
+                <p>Keep up to date with our newsletter</p>
+                <a class="small-btn" href="#">Subscribe</a>
+            </div>
         </aside>
 
         <!-- Section for "Fitness Rooms" -->
-        <section class="fitness">
+        <section class="fitness wrapper">
             <!-- Image will be hidden on mobile -->
             <div class="image hide">
                 <img src="images/fitness.jpg" alt="a person crouches in order to lift a heavy weight">
@@ -138,7 +144,7 @@
         </section>
 
         <!-- Section for "Rock Climbing" -->
-        <section class="climbing">
+        <section class="climbing wrapper">
              <div class="info">
                  <h3>Indoor climbing?</h3>
                  <h4>Rock climbing</h4>
@@ -154,7 +160,7 @@
         </section>
 
         <!-- Section for "Sponsors" -->
-        <section class="sponsor">
+        <section class="sponsor wrapper">
             <h2>Special thank you to the following</h2>
             <!-- Placing sponsor logos in their own container to apply different layouts across devices -->
             <div class="sponsor-logos">
@@ -167,24 +173,21 @@
     </main>
 
     <footer>
-        <!-- Adding class of "wrapper" to assign same margins to footer content -->
-        <div class="wrapper footer-content">
-            <!-- Separating social media information and back-to-top arrow, since they have different alignment -->
-            <div class="follow">
-                <p>Follow us</p>
-                <img src="icons/facebook.svg" alt="Facebook icon">
-                <img src="icons/instagram.svg" alt="Instragram icon">
-                <img src="icons/twitter.svg" alt="Twitter icon">
-                <img src="icons/youtube.svg" alt="YouTube icon">
-            </div>
+        <!-- Separating social media information and back-to-top arrow, since they have different alignment -->
+        <div class="follow">
+            <p>Follow us</p>
+            <img src="icons/facebook.svg" alt="Facebook icon">
+            <img src="icons/instagram.svg" alt="Instragram icon">
+            <img src="icons/twitter.svg" alt="Twitter icon">
+            <img src="icons/youtube.svg" alt="YouTube icon">
+        </div>
 
-            <div class="to-top">
-                <!-- When pressed, arrow takes the user back to header area -->
-                <a href="#top">
-                    <img class="top-arrow" src="icons/arrow.svg" alt="upward arrow icon">
-                </a>
-                <p>back to top</p>
-            </div>
+        <div class="to-top">
+            <!-- When pressed, arrow takes the user back to header area -->
+            <a href="#top">
+                <img class="top-arrow" src="icons/arrow.svg" alt="upward arrow icon">
+            </a>
+            <p>back to top</p>
         </div>
     </footer>
 </body>
