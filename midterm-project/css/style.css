@@ -105,7 +105,7 @@ nav a:visited{
     font-size: 1.15rem;
     text-decoration: none;
     color: var(--accent-color);
-    padding: 0.5rem;
+    padding: 0.8rem;
 }
 
 /*  */
@@ -139,8 +139,8 @@ nav a:active{
 
 /* Styling button links as block elements to adjust size and to position */
 /* Large call-to-action button */
-.start-btn:link,
-.start-btn:visited{
+.large-btn:link,
+.large-btn:visited{
     display: block;
     max-width: 10em;
     margin: 1rem auto 2rem auto;
@@ -173,8 +173,8 @@ nav a:active{
 }
 
 /*  */
-.start-btn:hover,
-.start-btn:active,
+.large-btn:hover,
+.large-btn:active,
 .small-btn:hover,
 .small-btn:active{
     text-decoration: underline;
@@ -310,4 +310,67 @@ footer{
     margin: auto;
     padding: 1rem 0;
     max-height: 10rem;
+}
+
+/* ******** CONTACT PAGE ******** */
+
+/* Section - Contact Us */
+
+.feedback-form{
+    color: var(--accent-color);
+    background-color: var(--primary-color);
+    border-radius: 25px;
+    box-shadow: 5px 10px 7px rgba(18, 74, 58, 20%);
+    padding: 1rem;
+    margin: 2rem 0 1rem 0;
+}
+
+/* Putting each input area on a separate line from its label, and making them take up the full width of the form */
+.feedback-form input,
+.feedback-form textarea{
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 50px;
+    padding: 0.5rem;
+    margin: 0.5rem 0 1rem 0;
+}
+
+/* The message box has a different border radius than the other input areas */
+.feedback-form textarea{
+    border-radius: 10px;
+}
+
+/* Decreasing large default margin on header */
+.feedback-form h2{
+    margin: 0.8rem 0;
+}
+
+/* The contact button was styled above according to the "large-btn" class. Overwriting the colour to change it from green to black.  */
+.contact-btn:link,
+.contact-btn:link{
+    background-color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+/* Section - Our Location */
+
+/* Removing italic and bold styles defined in the default styles, and decreasing large default margin/padding */
+.location h3{
+    font-weight: 400;
+    font-style: normal;
+    padding: 0 0 1rem 0;
+    margin: 0;
+}
+
+/* Setting max-width on map to eliminate horizontal scrollbar */
+iframe{
+    display: block;
+    max-width: 100%;
+    margin: 2rem auto 0 auto;
+}
+
+/* Removing padding of this particular section so map is flush to the header */
+.location{
+    padding-bottom: 0;
 }
