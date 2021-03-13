@@ -38,7 +38,7 @@
     </header>
 
     <main>
-        <!-- Content within most of the following sections will be separated into divs for "info" and "image", to facilitate horizontal layouts on screens wider than mobile -->
+        <!-- Content within most of the following sections will be separated into "info" and "image", to facilitate horizontal layouts on screens wider than mobile -->
         <!-- Adding class of "wrapper" only to content maintaining consistent margin (for example, some images must span the entire width of the screen) -->
         <!-- Starting with section for "What to expect during construction" -->
         <section class="construction wrapper">
@@ -52,9 +52,7 @@
                 </p>
             </div>
 
-            <div class="image">
-                <img src="images/construction.svg" alt="two construction workers carry wooden beams and stand inside the wooden frame of a house">
-            </div>
+            <img src="images/construction.svg" alt="two construction workers carry wooden beams and stand inside the wooden frame of a house">
         </section>
 
         <!-- Section for "About" -->
@@ -64,22 +62,24 @@
             </div>
             <!-- Grouping paragraphs with their respective headings so they stay together in the horizontal desktop layout -->
             <div class="wrapper">
-                <h3>Who</h3>
-                <p>
-                    is ARC? We are the Athletics & Recreation Centre. This is an exciting venture for our Algonquin Community.  This facility will provide our students with a place to break through perceptual barriers in a welcoming, safe, inclusive and inviting environment for students of all backgrounds, cultures and abilities to spark a movement.
-                </p>
-            </div>
-            <div class="wrapper">
-                <h3>What</h3>
-                <p>
-                    is this going to cost me? This facility will be included in your activity fee. All fee-paying students can use and participate in all activities in the building. As for the facility, it will cost Algonquin College $48.8 million.
-                </p>
-            </div>
-            <div class="wrapper">
-                <h3>Where</h3>
-                <p>
-                    will the ARC building be? The ARC building will be located northeast of the Student Commons building, opposite of the residence. The facility will be an estimated 100,000 square feet! Connected to the Student Commons by a "Plus 15" Pedestrian Link. 
-                </p>
+                <div>
+                    <h3>Who</h3>
+                    <p>
+                        is ARC? We are the Athletics & Recreation Centre. This is an exciting venture for our Algonquin Community.  This facility will provide our students with a place to break through perceptual barriers in a welcoming, safe, inclusive and inviting environment for students of all backgrounds, cultures and abilities to spark a movement.
+                    </p>
+                </div>
+                <div>
+                    <h3>What</h3>
+                    <p>
+                        is this going to cost me? This facility will be included in your activity fee. All fee-paying students can use and participate in all activities in the building. As for the facility, it will cost Algonquin College $48.8 million.
+                    </p>
+                </div>
+                <div>
+                    <h3>Where</h3>
+                    <p>
+                        will the ARC building be? The ARC building will be located northeast of the Student Commons building, opposite of the residence. The facility will be an estimated 100,000 square feet! Connected to the Student Commons by a "Plus 15" Pedestrian Link. 
+                    </p>
+                </div>
             </div>
         </section>
 
@@ -91,9 +91,7 @@
             <!-- Creating sections for each "Service", starting with "Restaurant & Lounge" -->
             <section class="restaurant wrapper">
                 <!-- Adding class "hide" to all images that will be hidden on mobile -->
-                <div class="image hide">
-                    <img src="images/bar.jpg" alt="a bar with wooden counter and stools, and shelves lined with glass bottles">
-                </div>
+                <img class="hide" src="images/bar.jpg" alt="a bar with wooden counter and stools, and shelves lined with glass bottles">
     
                 <div class="info">
                     <h3>Need a break?</h3>
@@ -106,17 +104,17 @@
             
             <!-- Section for "Bowling Lanes" -->
             <section class="bowling">
-                <div class="info wrapper">
-                    <h3>Competitive friends?</h3>
-                    <h4>Bowling lanes</h4>
-                    <p>
-                        are finally here. Grab your friends and book a lane at the Students’ Association Bowling Lanes that will be part of the upcoming ARC! Don't like bowling? Well, look no further. Practice your swing no matter the weather on the Golf Simulator that will be located in the ARC building.
-                    </p>
-                </div>
-    
-                <!-- Image will be hidden on mobile -->
-                <div class="image hide wrapper">
-                    <img src="images/bowling.jpg" alt="a close-up of a person's bowling shoes from behind as they face the alley">
+                <div class="wrapper">
+                    <div class="info">
+                        <h3>Competitive friends?</h3>
+                        <h4>Bowling lanes</h4>
+                        <p>
+                            are finally here. Grab your friends and book a lane at the Students’ Association Bowling Lanes that will be part of the upcoming ARC! Don't like bowling? Well, look no further. Practice your swing no matter the weather on the Golf Simulator that will be located in the ARC building.
+                        </p>
+                    </div>
+        
+                    <!-- Image will be hidden on mobile -->
+                    <img class="hide" src="images/bowling.jpg" alt="a close-up of a person's bowling shoes from behind as they face the alley">
                 </div>
             </section>
     
@@ -131,9 +129,7 @@
             <!-- Section for "Fitness Rooms" -->
             <section class="fitness wrapper">
                 <!-- Image will be hidden on mobile -->
-                <div class="image hide">
-                    <img src="images/fitness.jpg" alt="a person crouches in order to lift a heavy weight">
-                </div>
+                <img class="hide" src="images/fitness.jpg" alt="a person crouches in order to lift a heavy weight">
     
                 <div class="info">
                     <h3>New year, new me</h3>
@@ -146,18 +142,18 @@
     
             <!-- Section for "Rock Climbing" -->
             <section class="climbing">
-                 <div class="info wrapper">
-                     <h3>Indoor climbing?</h3>
-                     <h4>Rock climbing</h4>
-                     <p>
+                <div class="wrapper">
+                    <div class="info">
+                        <h3>Indoor climbing?</h3>
+                        <h4>Rock climbing</h4>
+                        <p>
                         Test your strength and flexibility on the rock-climbing wall. Add some variety to your fitness routine, the ARC will be able to offer more yoga and fitness classes to fit into your busy schedule. After a busy day of rock climbing or yoga, come and enjoy our new massage therapy area. 
-                     </p>
-                 </div>
-    
-                 <!-- Image will be hidden on mobile -->
-                 <div class="image hide wrapper">
-                     <img src="images/climbing.jpg" alt="a woman is rock-climbing indoors">
-                 </div>
+                        </p>
+                    </div>
+
+                    <!-- Image will be hidden on mobile -->
+                    <img class="hide" src="images/climbing.jpg" alt="a woman is rock-climbing indoors">
+                </div>
             </section>
         </section>
 
