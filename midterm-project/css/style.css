@@ -105,13 +105,11 @@ nav a:visited{
     text-decoration: none;
     color: var(--accent-color);
     padding: 0.8rem;
-    transition: transform 0.5s, color 0.5s;
 }
 
-/* Animation: When interacted with, the nav links grow slightly and turn green */
+/* When interacted with, the nav links are highlighted by turning green */
 nav a:hover,
 nav a:active{
-    transform: scale(1.2);
     color: var(--primary-color);
 }
 
@@ -188,6 +186,20 @@ footer{
     text-align: center;
 }
 
+    /* Animation: Icons bob up and down to draw attention to activities */
+    @keyframes bob{
+        50%{
+            transform: translateY(-10px);
+        }
+    }
+
+    .fas{
+        animation-name: bob;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+
 /* Centering image and decreasing large size */
 .discover img{
     max-width: 75%;
@@ -228,16 +240,15 @@ footer{
     background-color: var(--primary-color);
     border-radius: 40px;
     box-shadow: 0 10px 10px rgba(18, 74, 58, 50%);
-    transition: transform 0.8s, background-color 0.8s;
+    transition: transform 0.8s;
 }
 
-/* Animation: All buttons grow slightly in size and change color when hovered over/activated */
+/* Animation: All buttons grow slightly in size when hovered over/activated */
 .large-btn:hover,
 .large-btn:active,
 .small-btn:hover,
 .small-btn:active{
     transform: scale(1.2);
-    background-color: var(--secondary-color);
 }
 
 /* Section - SA President */
