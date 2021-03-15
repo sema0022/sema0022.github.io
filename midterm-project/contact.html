@@ -11,7 +11,7 @@
 
     <!-- Linking normalize code to set default styles across all browsers -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />    
-    <!-- Linking to Google Font - Raleway (Regular, Semi-bold, Semi-bold Italic, Bold, Bold Italic) -->
+    <!-- Linking to Google Font - Raleway -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">      
     <!-- Linking to icon fonts from Font Awesome -->
@@ -53,10 +53,8 @@
             <form class="feedback-form" action="#" method="POST">
                 <h2>Contact us.</h2>
                 <!-- User enters full name here -->
-                <div>
-                    <label for="fullname">Full Name</label>
-                    <input type="text" name="fullname" id="fullname" placeholder="Full Name">
-                </div>
+                <label for="fullname">Full Name</label>
+                <input type="text" name="fullname" id="fullname" placeholder="Full Name">
                 <!-- User enters student number here -->
                 <label for="studentnumber">Student Number</label>
                 <input type="text" name="studentnumber" id="studentnumber" placeholder="Student Number">
@@ -74,7 +72,7 @@
         <!-- Section for "Location" -->
         <section class="location">
             <!-- Separating the info from the map to reflect their grouping in the desktop layout -->
-            <!-- This div will be assigned consistent margins in desktop layout, since the map is otherwise unwrapped/the width of the screen on mobile and tablet  -->
+            <!-- Margins will be applied to this div in desktop layout, when the map is inside instead of spanning the screen  -->
             <div>
                 <div class="info wrapper">
                     <h2>Our Location.</h2>
