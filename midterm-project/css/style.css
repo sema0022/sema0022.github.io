@@ -25,7 +25,7 @@ html{
     box-sizing: inherit;
 }
 
-/* Creating space around content and centering it */
+/* Creating consistent margins on either side of content */
 .wrapper{
     width: 85%;
     margin: auto;
@@ -36,15 +36,16 @@ section{
     padding-bottom: 1rem;
 }
 
-/* Adjusting typographic scale of headings to match mock-up */
+/* Adjusting typographic scale and spacing of headings to match mock-up */
 h1{
     font-size: 2.5rem;
     margin-top: 1em;
 }
+
 h2{
     font-size: 2rem;
 }
-/* Decreasing margin of h3 and h4 because they're often grouped close together as heading and subheading */
+
 /* h3 is most often italic */
 h3{
     font-size: 1.6rem;
@@ -52,6 +53,7 @@ h3{
     margin: 1rem 0;
     padding-top: 1rem;
 }
+
 /* h4 is always green and regular weight */
 h4{
     font-size: 1.25rem;
@@ -120,7 +122,7 @@ nav a:active{
 
 /* Footer Area */
 
-/* Using flex to horizontally space/position the social icons and back-to-top button */
+/* Using flex to horizontally position the group of social icons and back-to-top button */
 footer{
     display: flex;
     align-items: flex-end;
@@ -129,7 +131,7 @@ footer{
     padding: 2rem 1.5rem;
 }
 
-/* Using flex again with the social icons to space them out horizontally */
+/* Using flex so the individual social icons are spaced out horizontally too */
 .follow{
     display: flex;
     flex-wrap: wrap;
@@ -155,7 +157,7 @@ footer{
     font-size: 0.6rem;
 }
 
-/* Animation: the button scales up slighlty when hovered over/activated */
+/* Animation: the icon's size increases slighlty when hovered over/activated */
 .to-top{
     transition: transform 0.8s;
 }
@@ -181,26 +183,25 @@ footer{
     padding: 1rem 0;
 }
 
-/* Center-aligning both text and icons for activities */
 .activities div{
     text-align: center;
 }
 
-    /* Animation: Icons bob up and down to draw attention to activities */
-    @keyframes bob{
-        50%{
-            transform: translateY(-10px);
-        }
+/* Animation: Icons bob up and down to draw attention to activities */
+@keyframes bob{
+    50%{
+        transform: translateY(-10px);
     }
+}
 
-    .fas{
-        animation-name: bob;
-        animation-duration: 3s;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out;
-    }
+.fas{
+    animation-name: bob;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
 
-/* Centering image and decreasing large size */
+/* Centering banner image and decreasing large size */
 .discover img{
     max-width: 75%;
     margin: auto;
@@ -260,7 +261,7 @@ footer{
     padding-top: 2rem;
 }
 
-/* Vertically aligning president's image with her title */
+/* Using flex to vertically align president's image with her title */
 .president .profile{
     display: flex;
     flex-direction: column;
@@ -299,7 +300,6 @@ footer{
     margin: 0;
 }
 
-/* Certain sections of the page have a light-grey background */
 .about,
 .bowling,
 .climbing{
@@ -365,7 +365,7 @@ footer{
     margin: 2rem 0 1rem 0;
 }
 
-/* Putting each input area on a separate line from its label, and making them take up the full width of the form */
+/* Styling input areas as block elements to put them on separate lines from labels */
 .feedback-form input,
 .feedback-form textarea{
     display: block;
@@ -376,7 +376,6 @@ footer{
     margin: 0.5rem 0 1rem 0;
 }
 
-/* The message box has a different border radius than the other input areas */
 .feedback-form textarea{
     border-radius: 10px;
 }
@@ -386,7 +385,7 @@ footer{
     margin: 0.8rem 0;
 }
 
-/* The contact button was styled above according to the "large-btn" class. Overwriting the colour to change it from green to black.  */
+/* The contact button was styled according to the "large-btn" class above. Just changing the colour from green to black.  */
 .contact-btn:link,
 .contact-btn:visited{
     background-color: var(--secondary-color);
@@ -410,7 +409,7 @@ iframe{
     margin: 2rem auto 0 auto;
 }
 
-/* Removing padding of this particular section so map is flush to the header */
+/* Removing padding of this particular section so map is flush to the footer */
 .location{
     padding-bottom: 0;
 }
@@ -424,7 +423,7 @@ iframe{
         font-size: 17px;
     }
 
-    /* Increasing importance of h1 to match mockup, as length of word "construction" no longer causes scrollbar at a larger screen width */
+    /* Increasing importance of h1 to match mockup, since length of word "construction" no longer causes scrollbar as with smaller screen */
     h1{
         font-size: 3rem;
     }
@@ -436,7 +435,7 @@ iframe{
         margin: 0;
     }
 
-    /* Changing flex direction to create horizontal navigation */
+    /* Changing flex direction to create horizontal navigation, with logo and links on opposite ends */
     .navbar,
     .navbar nav{
         flex-direction: row;
@@ -493,7 +492,7 @@ iframe{
     .fitness{
         display: grid;
         grid-template-columns: 2fr 3fr;
-        align-items: flex-start;
+        align-items: start;
         column-gap: 1rem;
         padding: 3rem 0;
     }
@@ -502,7 +501,7 @@ iframe{
     .climbing > div{
         display: grid;
         grid-template-columns: 3fr 2fr;
-        align-items: flex-start;
+        align-items: start;
         column-gap: 1rem;
         padding: 3rem 0;
     }
@@ -554,7 +553,7 @@ iframe{
 
     /* ******** HOME PAGE ******** */
     
-    /* Using flex to place image to the right of HOME PAGE banner; at the same time, applying same styles to ABOUT PAGE banner */
+    /* Using flex to place image to the right of HOME PAGE banner text; at the same time, applying same styles to ABOUT PAGE banner */
     .discover,
     .construction{
         display: flex;
@@ -569,7 +568,7 @@ iframe{
         margin: 0;
     }
 
-    /* Using grid to create 2-columns for Discover Algonquin College; the div is given margins consistent with the wrapper, now that the image is inside */
+    /* Using grid to create 2-columns for Discover - Algonquin College; the div is given margins consistent with the wrapper, now that the image is inside */
     .college > div{
         width: 85%;
         margin: auto;
@@ -667,7 +666,7 @@ iframe{
         column-gap: 2rem;
     }
 
-    /* Creating 2 equal columns in a grid to have map beside the hours of operation; applying same margin as wrapper to div now that map doesn't need to fit the screen width */
+    /* Creating 2 equal columns in a grid to have map beside the hours of operation; applying same margin as wrapper to div now that map is inside */
     .location > div{
         display: grid;
         grid-template-columns: 1fr 1fr;
