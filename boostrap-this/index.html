@@ -16,13 +16,16 @@
 
   <body>
     <!-- Navbar -->
-    <nav id="pagetop" class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <!-- Vertical, collapsible menu in smaller screens; horizontal layout in larger screens -->
+    <!-- Black background was chosen to go with the primary blue colour of the site-->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
       <div class="container-fluid">
         <a href="index.html" class="navbar-brand">Bootstrap x IMD</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarnav">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarnav">
+          <!-- Automatic margin to the left of navigation links pushes them to the end -->
           <div class="navbar-nav ms-auto">
             <a href="#about" class="nav-link">What is Bootstrap?</a>
             <a href="#benefits" class="nav-link">Benefits of Bootstrap</a>
@@ -33,26 +36,27 @@
       </div>
     </nav>
 
-    <!-- Primary heading -->
-    <!-- Image https://pixabay.com/images/id-1684591/ -->
+    <!-- Header -->
+    <!-- Banner is an edit of the following stock image: https://pixabay.com/images/id-1684591/ -->
+    <!-- Background colour of banner image matches that of primary heading to create a seamless header area-->
     <header>
       <img class="img-fluid" src="images/monitors-banner.jpg" alt="a graphic of three monitors in a row, each one displaying a colourful block layout">
       <h1 class="bg-primary text-white text-center display-1 fw-normal py-4">Bootstrap This!</h1>
     </header>
 
-    <!-- What is Bootstrap? -->
+    <!-- A top margin will be added to each section to create better spacing -->
+
+    <!-- Section - What is Bootstrap? -->
     <section id="about" class="container mt-4">
-      <div class="row">
-        <div class="col">
-          <h2 class="h1">What is Bootstrap?</h2>
-          <p>
-            Bootstrap is a popular front-end framework that can be used to easily build responsive, mobile-first websites. Open-source, it boasts a variety of components, numerous predefined classes, and even an icon library to help you create quickly and efficiently. 
-          </p>
-        </div>
-      </div>
+      <h2 class="h1">What is Bootstrap?</h2>
+      <p>
+        Bootstrap is a popular front-end framework that can be used to easily build responsive, mobile-first websites. Open-source, it boasts a variety of components, numerous predefined classes, and even an icon library to help you create quickly and efficiently. 
+      </p>
     </section>
 
-    <!-- Benefits of Bootstrap -->
+    <!-- Section - Benefits of Bootstrap -->
+    <!-- Cards for each benefit are placed inside of columns to help with responsiveness -->
+    <!-- From single column layout, to two-column at medium breakpoint, to three-column at large breakpoint-->
     <section id="benefits" class="container mt-4">
       <h2 class="h1">Benefits of Bootstrap</h2>
       <div class="row g-4">
@@ -92,7 +96,8 @@
       </div>
     </section>
 
-    <!-- Getting Started -->
+    <!-- Section - Getting Started -->
+    <!-- A full-width blue background is used to highlight the three steps to getting started -->
     <section id="getstarted" class="bg-primary mt-4 py-3">
       <div class="container">
         <div class="row">
@@ -100,27 +105,29 @@
             <h2 class="h1">Getting Started</h2>
             <p>
               Not sure where to begin?
-              <ol>
-                <li>
-                  Copy and paste <a class="link-light fw-bold" href="https://getbootstrap.com/docs/5.0/getting-started/introduction/#starter-template" target="_blank">Bootstrap's Starter Template</a> into a new HTML document.
-                </li>
-                <li>
-                  Then, take a look through <a class="link-light fw-bold" href="https://getbootstrap.com/docs/5.0/getting-started/introduction/" target="_blank">Bootstrap's Documentation Page</a> to discover all the different ways you can build your site!
-                </li>
-                <li>
-                  Remember, Bootstrap is based on a 12-column grid system; a basic structure will consist of a container, with a row inside, which in turn contains columns.
-                </li>
-              </ol> 
             </p>
+            <ol>
+              <li>
+                Copy and paste <a class="link-light fw-bold" href="https://getbootstrap.com/docs/5.0/getting-started/introduction/#starter-template" target="_blank">Bootstrap's Starter Template</a> into a new HTML document.
+              </li>
+              <li>
+                Then, take a look through <a class="link-light fw-bold" href="https://getbootstrap.com/docs/5.0/getting-started/introduction/" target="_blank">Bootstrap's Documentation Page</a> to discover all the different ways you can build your site!
+              </li>
+              <li>
+                Remember, Bootstrap is based on a 12-column grid system; a basic structure will consist of a container, with a row inside, which in turn contains columns.
+              </li>
+            </ol> 
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Featured Components -->
+    <!-- Section - Featured Components -->
+    <!-- Each component is displayed in a card, which contains a grid to help with responsive layout -->
+    <!-- Starts from single-column layout and progresses to two columns at medium breakpoint (one column with description, the other with component example)-->
     <section id="components" class="container mt-4">
       <h2 class="h1">Featured Components</h2>
-      <!-- Accordions -->
+      <!-- Component - Accordions -->
       <div class="card border-primary border-2 mt-4">
         <h3 class="card-header">Accordions</h3>
         <div class="row card-body g-4">
@@ -131,6 +138,7 @@
           </div>
           <div class="col-md-5">
             <div id="accordiondemo" class="accordion">
+              <!-- First accordion item -->
               <div class="accordion-item">
                 <h2 class="accordion-header" id="firstheading">
                   <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefirst" aria-expanded="true" aria-controls="collapsefirst">
@@ -145,6 +153,7 @@
                   </div>
                 </div>
               </div>
+              <!-- Second accordion item -->
               <div class="accordion-item">
                 <h2 class="accordion-header" id="secondheading">
                   <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesecond" aria-expanded="false" aria-controls="collapsesecond">
@@ -163,7 +172,7 @@
           </div>
         </div>
       </div>
-      <!-- Buttons -->
+      <!-- Component - Buttons -->
       <div class="card border-primary border-2 mt-4">
         <div class="card-header">
           <h3>Buttons</h3>
@@ -174,6 +183,7 @@
               Provide buttons to users to encourage actions from them. You can easily change the style and state to convey your intended message.
             </p>
           </div>
+          <!-- The three buttons are displayed horizontally only at large breakpoints, in order to fit completely -->
           <div class="col-md-5">
             <div class="row g-2">
               <div class="col-12 col-lg-4">
@@ -189,7 +199,7 @@
           </div>
         </div>
       </div>
-      <!-- Alerts -->
+      <!-- Component - Alerts -->
       <div class="card border-primary border-2 mt-4">
         <div class="card-header">
           <h3>Alerts</h3>
@@ -213,7 +223,7 @@
           </div>
         </div>
       </div>
-      <!-- Badges -->
+      <!-- Component - Badges -->
       <div class="card border-primary border-2 mt-4">
         <div class="card-header">
           <h3>Badges</h3>
@@ -240,7 +250,7 @@
           </div>
         </div>
       </div>
-      <!-- Spinners -->
+      <!-- Component - Spinners -->
       <div class="card border-primary border-2 mt-4">
         <div class="card-header">
           <h3>Spinners</h3>
@@ -252,6 +262,7 @@
             </p>
           </div>
           <div class="col-md-5">
+            <!-- Border spinners -->
             <p class="h5">
               Loading...
             </p>
@@ -279,6 +290,7 @@
             <div class="spinner-border text-dark" role="status">
               <span class="visually-hidden">Loading...</span>
             </div>
+            <!-- Paragraph creates new line for growing spinners -->
             <p class="h5 mt-4">
               Please Wait...
             </p>
@@ -310,20 +322,23 @@
         </div>
       </div>
       <!-- More Components -->
+      <!-- Action button encourages user to continue exploring components -->
       <div class="row mt-4">
         <div class="col">
-          <h4>More Components</h3>
+          <h4>More Components</h4>
           <p>
             See other component examples by visiting Bootstrap's Documentation Page.
-            <div>
-              <a class="btn btn-primary" role="button" href="https://getbootstrap.com/docs/5.0/getting-started/introduction/" target="_blank">View More</a>
-            </div>
           </p>
+          <div>
+            <a class="btn btn-primary" role="button" href="https://getbootstrap.com/docs/5.0/getting-started/introduction/" target="_blank">View More</a>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Footer -->
+    <!-- Black background to match navbar  -->
+    <!-- Three-column grid helps to space social media icons -->
     <footer class="bg-dark mt-5 py-3">
       <div class="container">
         <p class="text-center text-white">Follow Bootstrap</p>
