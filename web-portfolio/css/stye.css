@@ -1,0 +1,42 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Nobile', sans-serif;
+}
+
+.custom-bg-primary,
+.btn-primary{
+    background-color: #2F6AEB;
+}
+
+.custom-bg-secondary,
+.btn-secondary{
+    background-color: #DB9909;
+}
+
+.navbar-custom a,
+.navbar-toggler{
+    color: #2F6AEB;
+}
+
+.navbar-custom a:hover,
+.navbar-custom a:focus,
+.navbar-toggler:hover,
+.navbar-toggler:focus{
+    color: #DB9909;
+}
+
+.btn,
+.navbar-toggler{
+    border: none;
+}
+ .custom-logo{
+     max-width: 3.5em;
+ }
+
+ .link-light:hover,
+ .link-light:focus{
+     color: #EDCF8E;
+ }
