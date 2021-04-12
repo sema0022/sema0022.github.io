@@ -1,14 +1,16 @@
 .container{
-    max-width: 1000px;
+    max-width: 1200px;
 }
 
 body{
     font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
     color: #052D82;
 }
 
 h1, h2, h3, h4, h5, h6{
     font-family: 'Nobile', sans-serif;
+    font-weight: bold;
 }
 
 .custom-bg-primary,
@@ -19,6 +21,26 @@ h1, h2, h3, h4, h5, h6{
 .custom-bg-secondary,
 .btn-secondary{
     background-color: #DB9909;
+}
+
+.btn-primary,
+.btn-secondary{
+    font-weight: 600;
+}
+
+.custom-text-secondary,
+.link-secondary{
+    color: #DB9909;
+}
+
+.link-secondary:hover,
+.link-secondary:focus{
+    color: #c78904;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus{
+    background-color: #c78904;
 }
 
 .navbar-custom a,
@@ -57,6 +79,12 @@ h1, h2, h3, h4, h5, h6{
      height: 50vh;
  }
 
+ .confirmation-banner{
+    height: 100vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), #2F6AEB url(../images/cloud-banner.jpg) no-repeat center center;
+    background-size: cover;
+ }
+
  .portrait{
      max-height: 60vh;
      object-fit: cover;
@@ -75,10 +103,7 @@ h1, h2, h3, h4, h5, h6{
      object-fit: cover;
  }
 
- @media screen and (min-width: 768px){
-    .portrait{
-        max-height: 75vh;
-        object-fit: cover;
-        object-position: center 40%;
-    }
+ #contact-form input,
+ #contact-form textarea{
+     border: 2px solid #2F6AEB;
  }
