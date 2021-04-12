@@ -1,5 +1,10 @@
+.container{
+    max-width: 1000px;
+}
+
 body{
     font-family: 'Open Sans', sans-serif;
+    color: #052D82;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -39,4 +44,31 @@ h1, h2, h3, h4, h5, h6{
  .link-light:hover,
  .link-light:focus{
      color: #EDCF8E;
+ }
+
+ /* Mobile first */
+ .home-banner{
+     height: 60vh;
+     background: #2F6AEB url(../images/cloud-banner.jpg) no-repeat center center;
+     background-size: cover;
+ }
+
+ .portrait{
+     max-height: 60vh;
+     object-fit: cover;
+     object-position: center 40%;
+ }
+
+ .ux-preview,
+ .digital-graphics-preview{
+     height: 40vh;
+     object-fit: cover;
+ }
+
+ @media screen and (min-width: 768px){
+    .portrait{
+        max-height: 75vh;
+        object-fit: cover;
+        object-position: center 40%;
+    }
  }
