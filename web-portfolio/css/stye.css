@@ -68,6 +68,11 @@ h1, h2, h3, h4, h5, h6{
      color: #EDCF8E;
  }
 
+ img[data-bs-toggle]:hover,
+ img[data-bs-toggle]:focus{
+    opacity: 0.5;
+ }
+
  /* Mobile first */
  .home-banner{
      height: 60vh;
@@ -79,8 +84,9 @@ h1, h2, h3, h4, h5, h6{
      height: 50vh;
  }
 
+ /* Something I learned - overlays */
  .confirmation-banner{
-    height: 100vh;
+    height: 80vh;
     background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), #2F6AEB url(../images/cloud-banner.jpg) no-repeat center center;
     background-size: cover;
  }
@@ -95,12 +101,7 @@ h1, h2, h3, h4, h5, h6{
  .digital-graphics-preview{
      height: 40vh;
      object-fit: cover;
- }
-
- .square img{
-     height: 25vh;
-     width: 100%;
-     object-fit: cover;
+     object-position: center;
  }
 
  #contact-form input,

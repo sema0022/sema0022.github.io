@@ -61,38 +61,130 @@
 
     <header class="banner d-flex align-items-center custom-bg-secondary text-center text-white">
         <div class="container">
-            <h1>Portfolio</h1>
-            <p>
+            <h1 class="display-4 fw-bold">Portfolio</h1>
+            <p class="fs-5">
                 I invite you to take a look at the most recent examples of my work below. 
             </p>
         </div>
     </header>
     
+    <!-- Add tabindex on images for accessibility -->
     <section id="ux-section">
-        <div class="container mt-3">
+        <div class="container mt-4">
             <div class="card border-0">
-                <h2 class="card-header bg-white border-0 text-center">UX Design</h2>
-                <div class="row g-4 square">
+                <h2 class="card-header bg-white border-0 text-center py-4">UX Design</h2>
+                <div class="row g-1 g-sm-2 g-md-4 square">
                     <div class="col-6 col-md-4">
-                        <img src="web-portfolio/images/spa-desktop.png" alt="Desktop mock-up of a website design for a spa" class="img-fluid btn" data-bs-toggle="modal" data-bs-target="#spaDesktop">
+                        <img src="web-portfolio/images/spa-desktop-thumbnail.jpg" alt="Thumbnail image for a website redesign" tabindex="0" class="img-fluid btn" data-bs-toggle="modal" data-bs-target="#spaDesktop">
+                        <div class="modal fade" id="spaDesktop" tabindex="-1" aria-labelledby="spaDesktopLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title fs-6" id="spaDesktopLabel">Desktop redesign for a spa's website</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container-fluid text-center">
+                                            <img src="web-portfolio/images/spa-desktop.jpg" alt="Desktop redesign for a spa's website" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-6 col-md-4">
-                        <img src="web-portfolio/images/device-mockup.png" alt="Device mock-up showing a website design on tablet, phone, and desktop" class="img-fluid btn" data-bs-toggle="modal" data-bs-target="#deviceMockup">
+                        <img src="web-portfolio/images/device-mockup-thumbnail.jpg" alt="Thumbnail image for a device mockup" tabindex="0" class="img-fluid btn" data-bs-toggle="modal" data-bs-target="#deviceMockup">
+                        <div class="modal fade" id="deviceMockup" tabindex="-1" aria-labelledby="deviceMockupLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title fs-6" id="deviceMockupLabel">Device mockup for a website redesign</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container-fluid text-center">
+                                            <img src="web-portfolio/images/device-mockup.jpg" alt="Device mock-up showing a website redesign on tablet, phone, and desktop" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-6 col-md-4">
-                        <img src="web-portfolio/images/spa-persona.jpg" alt="A persona chart created for a spa" class="img-fluid btn" data-bs-toggle="modal" data-bs-target="#spaPersona">
+                        <img src="web-portfolio/images/spa-persona-thumbnail.jpg" alt="Thumbnail image for a persona" tabindex="0" class="img-fluid btn" data-bs-toggle="modal" data-bs-target="#spaPersona">
+                        <div class="modal fade" id="spaPersona" tabindex="-1" aria-labelledby="spaPersonaLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title fs-6" id="spaPersonaLabel">Persona design for a spa</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container-fluid text-center">
+                                            <img src="web-portfolio/images/spa-persona.jpg" alt="A persona chart designed for a spa" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-6 col-md-4">
-                        <img src="web-portfolio/images/icecream-moodboard.jpg" alt="A moodboard created for an icecream shop" class="img-fluid btn" data-bs-toggle="modal" data-bs-target="#icecreamMood">
+                        <img src="web-portfolio/images/icecream-moodboard-thumbnail.jpg" alt="Thumbnail image for a moodboard" tabindex="0" class="img-fluid btn" data-bs-toggle="modal" data-bs-target="#icecreamMood">
+                        <div class="modal fade" id="icecreamMood" tabindex="-1" aria-labelledby="icecreamMoodLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title fs-6" id="icecreamMoodLabel">Moodboard for an ice cream shop</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container-fluid text-center">
+                                            <img src="web-portfolio/images/icecream-moodboard.jpg" alt="A moodboard created for an icecream shop" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-6 col-md-4">
-                        <img src="web-portfolio/images/icecream-desktop.png" alt="Desktop mock-up of a website design for an icecream shop" class="img-fluid btn" data-bs-toggle="modal" data-bs-target="#icecreamDesktop">
+                        <img src="web-portfolio/images/icecream-desktop-thumbnail.jpg" alt="Thumbnail image for a desktop site design" tabindex="0" class="img-fluid btn" data-bs-toggle="modal" data-bs-target="#icecreamDesktop">
+                        <div class="modal fade" id="icecreamDesktop" tabindex="-1" aria-labelledby="icecreamDesktopLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title fs-6" id="icecreamDesktopLabel">Desktop design for an ice cream shop</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container-fluid text-center">
+                                            <img src="web-portfolio/images/icecream-desktop.jpg" alt="Desktop design of a website for an icecream shop" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
                     </div>
                     <div class="col-6 col-md-4">
-                        <img src="web-portfolio/images/branding-exercise.jpg" alt="A branding guide for an artist retreat" class="img-fluid btn" data-bs-toggle="modal" data-bs-target="#blackRhino">
+                        <img src="web-portfolio/images/branding-exercise-thumbnail.png" alt="Thumbnail image for a branding guide" tabindex="0" class="img-fluid btn" data-bs-toggle="modal" data-bs-target="#blackRhino">
+                        <div class="modal fade" id="blackRhino" tabindex="-1" aria-labelledby="blackRhinoLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title fs-6" id="blackRhinoLabel">Branding guide for an artist retreat</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container-fluid text-center">
+                                            <img src="web-portfolio/images/branding-exercise.jpg" alt="A branding guide for an artist retreat" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="text-center mt-3">
+                <div class="text-center mt-4">
                     <a href="contact.html" class="btn btn-primary" role="button">Request a Design</a>
                 </div>
             </div>
@@ -100,234 +192,132 @@
     </section>
         
     <!-- Modals placed outside to take up full height-->
-    <div class="modal fade" id="spaDesktop" tabindex="-1" aria-labelledby="spaDesktopLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title fs-6" id="spaDesktopLabel">Desktop design for a spa website</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <img src="web-portfolio/images/spa-desktop.png" alt="Desktop mock-up of a website design for a spa" class="img-fluid">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="deviceMockup" tabindex="-1" aria-labelledby="deviceMockupLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title fs-6" id="deviceMockupLabel">Device mockup for spa website design</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <img src="web-portfolio/images/device-mockup.png" alt="Device mock-up showing a website design on tablet, phone, and desktop" class="img-fluid">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="spaPersona" tabindex="-1" aria-labelledby="spaPersonaLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title fs-6" id="spaPersonaLabel">Persona for a spa</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <img src="web-portfolio/images/spa-persona.jpg" alt="A persona chart created for a spa" class="img-fluid">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="icecreamMood" tabindex="-1" aria-labelledby="icecreamMoodLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title fs-6" id="icecreamMoodLabel">Moodboard for an ice cream shop</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <img src="web-portfolio/images/icecream-moodboard.jpg" alt="A moodboard created for an icecream shop" class="img-fluid">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="icecreamDesktop" tabindex="-1" aria-labelledby="icecreamDesktopLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title fs-6" id="icecreamDesktopLabel">Desktop design for an ice cream shop</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <img src="web-portfolio/images/icecream-desktop.png" alt="Desktop mock-up of a website design for an icecream shop" class="img-fluid">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="blackRhino" tabindex="-1" aria-labelledby="blackRhinoLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title fs-6" id="blackRhinoLabel">Branding guide for an artist retreat</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <img src="web-portfolio/images/branding-exercise.jpg" alt="A branding guide for an artist retreat" class="img-fluid">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <section id="digital-graphics-section">
-        <div class="container mt-3">
+        <div class="container mt-5">
             <div class="card border-0">
-                <h2 class="card-header bg-white border-0 text-center">Digital Graphics</h2>
-                <div class="row g-4 square">
+                <h2 class="card-header bg-white border-0 text-center py-4">Digital Graphics</h2>
+                <div class="row g-1 g-sm-2 g-md-4 square">
                     <div class="col-6 col-md-4">
-                        <img src="web-portfolio/images/scifi-poster.jpg" alt="A sci-fi poster for a fake movie called The Picture Plane" class="img-fluid btn" data-bs-toggle="modal" data-bs-target="#scifi">
+                        <img src="web-portfolio/images/scifi-poster-thumbnail.jpg" alt="Thumbnail image for a sci-fi poster" tabindex="0" class="img-fluid btn" data-bs-toggle="modal" data-bs-target="#scifi">
+                        <div class="modal fade" id="scifi" tabindex="-1" aria-labelledby="scifiLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title fs-6" id="scifiLabel">Sci-fi poster created in Photoshop</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container-fluid text-center">
+                                            <img src="web-portfolio/images/scifi-poster.jpg" alt="A sci-fi poster for a fake movie called The Picture Plane" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-6 col-md-4">
-                        <img src="web-portfolio/images/photoshop-exercise.jpg" alt="The head of a cow is edited onto the body of a crow" class="img-fluid btn" data-bs-toggle="modal" data-bs-target="#photoAnimal">
+                        <img src="web-portfolio/images/photoshop-exercise-thumbnail.jpg" alt="Thumbnail image for a photoshopped animal" tabindex="0" class="img-fluid btn" data-bs-toggle="modal" data-bs-target="#photoAnimal">
+                        <div class="modal fade" id="photoAnimal" tabindex="-1" aria-labelledby="photoAnimalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title fs-6" id="photoAnimalLabel">Hybrid animal created in Photoshop</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container-fluid text-center">
+                                            <img src="web-portfolio/images/photoshop-exercise.jpg" alt="The head of a cow is edited onto the body of a crow" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-6 col-md-4">
-                        <img src="web-portfolio/images/icecream-logo.png" alt="A logo for an icecream shop" class="img-fluid btn" data-bs-toggle="modal" data-bs-target="#icecreamLogo">
+                        <img src="web-portfolio/images/icecream-logo-thumbnail.png" alt="Thumbnail image for an icecream shop logo" tabindex="0" class="img-fluid btn" data-bs-toggle="modal" data-bs-target="#icecreamLogo">
+                        <div class="modal fade" id="icecreamLogo" tabindex="-1" aria-labelledby="icecreamLogoLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title fs-6" id="icecreamLogoLabel">Logo design for an icecream shop</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container-fluid text-center">
+                                            <img src="web-portfolio/images/icecream-logo.svg" alt="A logo for an icecream shop" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-6 col-md-4">
-                        <img src="web-portfolio/images/cloud-banner.jpg" alt="A digital collage with clouds, blue vertical bands for the sky and yellow accents" class="img-fluid btn" data-bs-toggle="modal" data-bs-target="#cloudBanner">
+                        <img src="web-portfolio/images/cloud-banner-thumbnail.jpg" alt="Thumbnail image for a digital collage" tabindex="0" class="img-fluid btn" data-bs-toggle="modal" data-bs-target="#cloudBanner">
+                        <div class="modal fade" id="cloudBanner" tabindex="-1" aria-labelledby="cloudBannerLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title fs-6" id="cloudBannerLabel">Digital collage created in Photoshop</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container-fluid text-center">
+                                            <img src="web-portfolio/images/cloud-banner.jpg" alt="A digital collage with clouds, blue vertical bands for the sky and yellow accents" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-6 col-md-4">
-                        <img src="web-portfolio/images/itunes-avatar.jpg" alt="A graphic of a cat surrounded by yarn balls" class="img-fluid btn" data-bs-toggle="modal" data-bs-target="#catItunes">
+                        <img src="web-portfolio/images/itunes-avatar-thumbnail.jpg" alt="Thumbnail image for an itunes avatar" tabindex="0" class="img-fluid btn" data-bs-toggle="modal" data-bs-target="#catItunes">
+                        <div class="modal fade" id="catItunes" tabindex="-1" aria-labelledby="catItunesLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title fs-6" id="catItunesLabel">Vector design for an iTunes avatar</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container-fluid text-center">
+                                            <img src="web-portfolio/images/itunes-avatar.svg" alt="A graphic of a cat floating in space, surrounded by yarn balls" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-6 col-md-4">
-                        <img src="web-portfolio/images/ipad-avatar.png" alt="A graphic of a cat staring at a yarn ball" class="img-fluid btn" data-bs-toggle="modal" data-bs-target="#catIpad">
+                        <img src="web-portfolio/images/ipad-avatar-thumbnail.png" alt="Thumbnail image for an ipad avatar" tabindex="0" class="img-fluid btn" data-bs-toggle="modal" data-bs-target="#catIpad">
+                        <div class="modal fade" id="catIpad" tabindex="-1" aria-labelledby="catIpadLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title fs-6" id="catIpadLabel">Vector design for an iPad avatar</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container-fluid text-center">
+                                            <img src="web-portfolio/images/ipad-avatar.svg" alt="A graphic of a cat staring up at a floating yarn ball" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="text-center mt-3">
+                <div class="text-center mt-4">
                     <a href="contact.html" class="btn btn-primary" role="button">Request a Design</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Modals placed outside to take up full height-->
-    <div class="modal fade" id="scifi" tabindex="-1" aria-labelledby="scifiLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title fs-6" id="scifiLabel">Photoshopped sci-fi poster</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <img src="web-portfolio/images/scifi-poster.jpg" alt="A sci-fi poster for a fake movie called The Picture Plane" class="img-fluid">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="photoAnimal" tabindex="-1" aria-labelledby="photoAnimalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title fs-6" id="photoAnimalLabel">Photoshopped animal</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <img src="web-portfolio/images/photoshop-exercise.jpg" alt="The head of a cow is edited onto the body of a crow" class="img-fluid">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="icecreamLogo" tabindex="-1" aria-labelledby="icecreamLogoLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title fs-6" id="icecreamLogoLabel">Logo design for an icecream shop</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <img src="web-portfolio/images/icecream-logo.png" alt="A logo for an icecream shop" class="img-fluid">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="cloudBanner" tabindex="-1" aria-labelledby="cloudBannerLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title fs-6" id="cloudBannerLabel">Digital collage</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <img src="web-portfolio/images/cloud-banner.jpg" alt="A digital collage with clouds, blue vertical bands for the sky and yellow accents" class="img-fluid">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="catItunes" tabindex="-1" aria-labelledby="catItunesLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title fs-6" id="catItunesLabel">Design for an iTunes avatar</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <img src="web-portfolio/images/itunes-avatar.jpg" alt="A graphic of a cat surrounded by yarn balls" class="img-fluid">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="catIpad" tabindex="-1" aria-labelledby="catIpadLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title fs-6" id="catIpadLabel">Design for an iPad avatar</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <img src="web-portfolio/images/ipad-avatar.png" alt="A graphic of a cat staring at a yarn ball" class="img-fluid">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <section id="qualifications-section">
-        <div class="container mt-3">
+        <div class="container mt-5">
             <div class="card">
-                <div class="card-body custom-bg-secondary text-white">
+                <div class="card-body custom-bg-secondary text-white py-4">
                     <h2 class="card-title">Qualifications</h2>
                     <div class="card-text">
                         <ul>
@@ -351,7 +341,7 @@
                             For a complete description of qualifications, you may view my resume below.
                         </p>
                     </div>
-                    <a href="" class="btn btn-primary" role="button">View Full Resume (PDF)</a>
+                    <a href="" class="btn btn-primary mt-4" role="button">View Full Resume (PDF)</a>
                 </div>
             </div>
         </div>
@@ -359,7 +349,7 @@
 
     <!-- Footer - Site Map -->
     <footer class="custom-bg-primary">
-        <div class="container pt-3 py-sm-3 mt-3">
+        <div class="container pt-3 py-sm-3 mt-5">
             <div class="row">
                 <div class="col col-md-2">
                     <a href="index.html" class="d-block link-light text-decoration-none fw-bold">Home</a>
