@@ -53,6 +53,10 @@ h1, h2, h3, h4, h5, h6{
      background-size: cover;
  }
 
+ .banner{
+     height: 50vh;
+ }
+
  .portrait{
      max-height: 60vh;
      object-fit: cover;
@@ -62,6 +66,12 @@ h1, h2, h3, h4, h5, h6{
  .ux-preview,
  .digital-graphics-preview{
      height: 40vh;
+     object-fit: cover;
+ }
+
+ .square img{
+     height: 25vh;
+     width: 100%;
      object-fit: cover;
  }
 
