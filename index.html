@@ -3,196 +3,232 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
-    <!-- Linking to Google Fonts - Nobile and Open Sans -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nobile:wght@400;500;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+        <!-- Linking to Google Fonts - Nobile and Open Sans -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Nobile:wght@400;500;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 
-    <!-- Linking to icon fonts from Font Awesome  -->
-    <script src="https://kit.fontawesome.com/87ce8f39f3.js" crossorigin="anonymous"></script>
+        <!-- Linking to icon fonts from Font Awesome  -->
+        <script src="https://kit.fontawesome.com/87ce8f39f3.js" crossorigin="anonymous"></script>
 
-    <!-- Linking Custom CSS stylesheet -->
-    <link rel="stylesheet" href="web-portfolio/css/stye.css">
+        <!-- Linking Custom CSS stylesheet -->
+        <link rel="stylesheet" href="web-portfolio/css/stye.css">
 
-    <title>Pauline Semaan - Home</title>
+        <title>Pauline Semaan - Home</title>
   </head>
+
   <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-sm bg-white navbar-custom">
-        <div class="container flex-column flex-lg-row">
-            <a href="index.html" class="navbar-brand">
-                <img src="web-portfolio/images/logo.png" alt="The designer's logo, containing her stylized initials" class="custom-logo">
-            </a>
-            <button class="navbar-toggler mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarmain" aria-controls="navbarmain" aria-expanded="false" aria-label="Toggle navigation">
-                <span><i class="fas fa-bars"></i></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-between flex-sm-column flex-lg-row" id="navbarmain">
-                <ul class="navbar-nav text-center">
-                    <li class="nav-item mx-sm-4">
-                        <a href="index.html" class="nav-link active fw-bold" aria-current="page">Home</a>
-                    </li>
-                    <li class="nav-item mx-sm-4">
-                        <a href="portfolio.html" class="nav-link">Portfolio</a>
-                    </li>
-                    <li class="nav-item mx-sm-4">
-                        <a href="contact.html" class="nav-link">Contact</a>
-                    </li>
-                </ul>
-                <div class="navbar-nav flex-row justify-content-between">
-                    <a href="https://www.instagram.com/" target="_blank" class="nav-link mx-4 mx-lg-2">
-                        <i class="fab fa-instagram fw-bold"></i>
-                    </a>
-                    <a href="https://www.facebook.com/" target="_blank" class="nav-link mx-4 mx-lg-2">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="https://ca.linkedin.com/" target="_blank" class="nav-link mx-4 mx-lg-2">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
+        <!-------------- 
+            Navigation 
+        ---------------->
+        <!-- The navbar is collapsible on mobile, and remains expanded starting at the sm breakpoint (since it's a small menu) -->
+        <nav class="navbar navbar-expand-sm bg-white navbar-custom">
+            <!-- All elements of the navbar are laid out horizontally at the lg breakpoint, to take up more space -->
+            <div class="container flex-column flex-lg-row">
+                <!-- Logo -->
+                <a href="index.html" class="navbar-brand">
+                    <img src="web-portfolio/images/logo.png" alt="The designer's logo, containing her stylized initials" class="custom-logo">
+                </a>
+
+                <!-- Toggle Button -->
+                <button class="navbar-toggler mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarmain" aria-controls="navbarmain" aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i class="fas fa-bars"></i></span>
+                </button>
+
+                <!-- Links (Collapsible) -->
+                <!-- Social Links are placed under Nav Links at smaller breakpoints, to save space -->
+                <div class="collapse navbar-collapse justify-content-between flex-sm-column flex-lg-row" id="navbarmain">
+                    <ul class="navbar-nav text-center">
+                        <li class="nav-item mx-sm-4">
+                            <a href="index.html" class="nav-link active fw-bold" aria-current="page">Home</a>
+                        </li>
+                        <li class="nav-item mx-sm-4">
+                            <a href="portfolio.html" class="nav-link">Portfolio</a>
+                        </li>
+                        <li class="nav-item mx-sm-4">
+                            <a href="contact.html" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                    <!-- Social Links are placed in a row in all screensizes, to minimize navbar height -->
+                    <div class="navbar-nav flex-row justify-content-between">
+                        <a href="https://www.instagram.com/" target="_blank" class="nav-link mx-4 mx-lg-2">
+                            <i class="fab fa-instagram fw-bold"></i>
+                        </a>
+                        <a href="https://www.facebook.com/" target="_blank" class="nav-link mx-4 mx-lg-2">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://ca.linkedin.com/" target="_blank" class="nav-link mx-4 mx-lg-2">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <header class="home-banner d-flex align-items-center">
-        <div class="container text-center text-white">
-            <h1 class="display-4 fw-bold">Pauline Semaan</h1>
-            <p class="h1">Web Designer</p>
-        </div>
-    </header>
+        <!-------------- 
+            Banner 
+        ---------------->
+        <!-- H1 is too similar to in size to other headings, and must be made larger to stand out -->
+        <header class="home-banner d-flex align-items-center">
+            <div class="container text-center text-white">
+                <h1 class="display-4 fw-bold">Pauline Semaan</h1>
+                <p class="h1">Web Designer</p>
+            </div>
+        </header>
 
-    <section class="container mt-4" id="about-section">
-        <div class="card custom-bg-primary">
-            <div class="row">
-                <div class="col-12 col-sm-5">
-                    <img src="web-portfolio/images/portrait.jpg" 
-                         alt="Portrait of Pauline Semaan" 
-                         class="card-img portrait">
+        <!------------------ 
+            About Section
+        -------------------->
+        <!-- Using a grid within a card to achieve different layouts based on breakpoints  -->
+        <section class="container mt-4" id="about-section">
+            <div class="card custom-bg-primary">
+                <div class="row">
+                    <div class="col-12 col-sm-5">
+                        <img src="web-portfolio/images/portrait.jpg" alt="Portrait of Pauline Semaan" class="card-img portrait">
+                    </div>
+                    <div class="col-12 col-sm-7 text-white">
+                        <div class="card-body py-sm-4 p-md-5">
+                            <h2 class="card-title">Hello! I'm Pauline.</h2>
+                            <p class="card-text">
+                                I’m an emerging web designer and visual artist based in Ottawa, Canada. I enjoy working creatively, whether my tools are a digital stylus and a mouse, or a pencil and a paintbrush. I create digital imagery and website prototypes with a focus on fresh, functional design.  
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-12 col-sm-7 text-white">
-                    <div class="card-body py-sm-4 p-md-5">
-                        <h2 class="card-title">Hello! I'm Pauline.</h2>
-                        <p class="card-text">
-                            I’m an emerging web designer and visual artist based in Ottawa, Canada. I enjoy working creatively, whether my tools are a digital stylus and a mouse, or a pencil and a paintbrush. I create digital imagery and website prototypes with a focus on fresh, functional design.  
+            </div>
+        </section>
+
+
+        <!-------------------- 
+            Services Section
+        ---------------------->
+        <section class="custom-bg-secondary" id="services-section">
+            <div class="container mt-4 py-4">
+                <h2 class="text-center text-white">Services</h2>
+                <p class="text-white">
+                    Allow me to help you share your vision digitally! To boost your online profile, I offer a variety of services, from logo creation to digital advertisements, to responsive website design.  
+                </p>
+
+                <!-- UX Design -->
+                <!-- Card with grid for layout - from single column to two at md breakpoint -->
+                <div class="card mt-4">
+                    <div class="row">
+                        <div class="col-12 col-md-5 order-md-last">
+                            <img src="web-portfolio/images/device-mockup.jpg" alt="Device mock-up showing a website design on tablet, phone, and desktop" class="card-img ux-preview">
+                        </div>
+                        <div class="col-12 col-md-7">
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <h3>Ux Design</h3>
+                                </div>
+                                <div class="card-text">
+                                    <ul>
+                                        <li>
+                                            User research and design recommendations for your business
+                                        </li>
+                                        <li>
+                                            Style guides to establish your brand
+                                        </li>
+                                        <li>
+                                            Website designs for multiple devices
+                                        </li>
+                                        <li>
+                                            Responsive prototypes for developers
+                                        </li>
+                                    </ul>
+                                    <a href="portfolio.html#ux-section" class="btn btn-primary" role="button">View More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Digital Graphics -->
+                <!-- Card with grid for layout - matches previous card -->
+                <div class="card mt-4">
+                    <div class="row">
+                        <div class="col-12 col-md-5 order-md-last">
+                            <img src="web-portfolio/images/portfolio-preview.png" alt="Preview images of portfolio work organized in a grid" class="card-img digital-graphics-preview">
+                        </div>
+                        <div class="col-12 col-md-7">
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <h3>Digital Graphics</h3>
+                                </div>
+                                <div class="card-text">
+                                    <ul>
+                                        <li>
+                                            Avatars, icons, logos
+                                        </li>
+                                        <li>
+                                            Digital ads and posters
+                                        </li>
+                                        <li>
+                                            Photograph enhancement/correction
+                                        </li>
+                                        <li>
+                                            Digital illustration and vector graphics
+                                        </li>
+                                    </ul>
+                                    <a href="portfolio.html#digital-graphics-section" class="btn btn-primary" role="button">View More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--------------------- 
+            Questions Section
+        ----------------------->
+        <section class="container mt-4">
+            <h3>Questions?</h3>
+            <p>
+                If you have any inquiries or projects in mind, please feel free to reach out to me with the details. 
+            </p>
+            <a href="contact.html" class="btn btn-secondary" role="button">Contact</a>
+        </section>
+
+        <!--------------------- 
+            Footer/Site Map
+        ----------------------->
+        <!-- Using a grid to arrange the site map into columns for each page -->
+        <!-- Displaying anchor tags as blocks to stack them inside each columnn -->
+        <footer class="custom-bg-primary">
+            <div class="container pt-3 py-sm-3 mt-5">
+                <div class="row">
+                    <div class="col col-md-2">
+                        <a href="index.html" class="d-block link-light text-decoration-none fw-bold">Home</a>
+                        <a href="index.html#about-section" class="d-block link-light text-decoration-none mt-1">About</a>
+                        <a href="index.html#services-section" class="d-block link-light text-decoration-none mt-1">Services</a>
+                    </div>
+                    <div class="col col-md-2">
+                        <a href="portfolio.html" class="d-block link-light text-decoration-none fw-bold">Portfolio</a>
+                        <a href="portfolio.html#ux-section" class="d-block link-light text-decoration-none mt-1">UX Design</a>
+                        <a href="portfolio.html#digital-graphics-section" class="d-block link-light text-decoration-none mt-1">Digital Graphics</a>
+                        <a href="portfolio.html#qualifications-section" class="d-block link-light text-decoration-none mt-1">Qualifications</a>
+                    </div>
+                    <div class="col col-md-2">
+                        <a href="contact.html" class="d-block link-light text-decoration-none fw-bold">Contact</a>
+                    </div>
+                    <!-- Copyright line wraps to the bottom at smaller screen sizes -->
+                    <div class="col-12 col-sm col-md-6">
+                        <p class="text-white fw-bold text-center text-sm-end mt-3 mt-sm-0">
+                            &copy; Pauline Semaan 2021
                         </p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </footer>
 
-    <section class="custom-bg-secondary" id="services-section">
-        <div class="container mt-4 py-4">
-            <h2 class="text-center text-white">Services</h2>
-            <p class="text-white">
-                Allow me to help you share your vision digitally! To boost your online profile, I offer a variety of services, from logo creation to digital advertisements, to responsive website design.  
-            </p>
-            <div class="card mt-4">
-                <div class="row">
-                    <div class="col-12 col-md-5 order-md-last">
-                        <img src="web-portfolio/images/device-mockup.jpg" alt="Device mock-up showing a website design on tablet, phone, and desktop" class="card-img ux-preview">
-                    </div>
-                    <div class="col-12 col-md-7">
-                        <div class="card-body">
-                            <div class="card-title">
-                                <h3>Ux Design</h3>
-                            </div>
-                            <div class="card-text">
-                                <ul>
-                                    <li>
-                                        User research and design recommendations for your business
-                                    </li>
-                                    <li>
-                                        Style guides to establish your brand
-                                    </li>
-                                    <li>
-                                        Website designs for multiple devices
-                                    </li>
-                                    <li>
-                                        Responsive prototypes for developers
-                                    </li>
-                                </ul>
-                                <a href="portfolio.html#ux-section" class="btn btn-primary" role="button">View More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card mt-4">
-                <div class="row">
-                    <div class="col-12 col-md-5 order-md-last">
-                        <img src="web-portfolio/images/portfolio-preview.png" alt="Preview images of portfolio work organized in a grid" class="card-img digital-graphics-preview">
-                    </div>
-                    <div class="col-12 col-md-7">
-                        <div class="card-body">
-                            <div class="card-title">
-                                <h3>Digital Graphics</h3>
-                            </div>
-                            <div class="card-text">
-                                <ul>
-                                    <li>
-                                        Avatars, icons, logos
-                                    </li>
-                                    <li>
-                                        Digital ads and posters
-                                    </li>
-                                    <li>
-                                        Photograph enhancement/correction
-                                    </li>
-                                    <li>
-                                        Digital illustration and vector graphics
-                                    </li>
-                                </ul>
-                                <a href="portfolio.html#digital-graphics-section" class="btn btn-primary" role="button">View More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="container mt-4">
-        <h3>Questions?</h3>
-        <p>
-            If you have any inquiries or projects in mind, please feel free to reach out to me with the details. 
-        </p>
-        <a href="contact.html" class="btn btn-secondary" role="button">Contact</a>
-    </section>
-
-    <!-- Footer - Site Map -->
-    <footer class="custom-bg-primary">
-        <div class="container pt-3 py-sm-3 mt-5">
-            <div class="row">
-                <div class="col col-md-2">
-                    <a href="index.html" class="d-block link-light text-decoration-none fw-bold">Home</a>
-                    <a href="index.html#about-section" class="d-block link-light text-decoration-none mt-1">About</a>
-                    <a href="index.html#services-section" class="d-block link-light text-decoration-none mt-1">Services</a>
-                </div>
-                <div class="col col-md-2">
-                    <a href="portfolio.html" class="d-block link-light text-decoration-none fw-bold">Portfolio</a>
-                    <a href="portfolio.html#ux-section" class="d-block link-light text-decoration-none mt-1">UX Design</a>
-                    <a href="portfolio.html#digital-graphics-section" class="d-block link-light text-decoration-none mt-1">Digital Graphics</a>
-                    <a href="portfolio.html#qualifications-section" class="d-block link-light text-decoration-none mt-1">Qualifications</a>
-                </div>
-                <div class="col col-md-2">
-                    <a href="contact.html" class="d-block link-light text-decoration-none fw-bold">Contact</a>
-                </div>
-                <div class="col-12 col-sm col-md-6">
-                    <p class="text-white fw-bold text-center text-sm-end mt-3 mt-sm-0">
-                        &copy; Pauline Semaan 2021
-                    </p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- JavaScript - Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+        <!-- JavaScript - Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
   </body>
 </html>
