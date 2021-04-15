@@ -47,20 +47,23 @@ h1, h2, h3, h4, h5, h6{
 }
 
 /* Replacing grey hover state of secondary links */
+.link-secondary:focus,
 .link-secondary:hover,
-.link-secondary:focus{
+.link-secondary:active{
     color: #c78904;
 }
 
 /* Replacing grey hover state of secondary buttons. Darker colour imitates hover state of other existing buttons */
+.btn-secondary:focus,
 .btn-secondary:hover,
-.btn-secondary:focus{
+.btn-secondary:active{
     background-color: #c78904;
 }
 
 /* Adding more noticeable hover state for light links */
+.link-light:focus,
 .link-light:hover,
-.link-light:focus{
+.link-light:active{
     color: #EDCF8E;
 }
 
@@ -73,10 +76,12 @@ h1, h2, h3, h4, h5, h6{
 }
 
 /* Using secondary theme colour for nav item hover states */
-.navbar-custom a:hover,
 .navbar-custom a:focus,
+.navbar-custom a:hover,
+.navbar-custom a:active,
+.navbar-toggler:focus,
 .navbar-toggler:hover,
-.navbar-toggler:focus{
+.navbar-toggler:active{
     color: #DB9909;
 }
 
@@ -123,8 +128,9 @@ h1, h2, h3, h4, h5, h6{
 }
 
 /* Adding a hover state to the thumbnail images to show they are clickable */
+img[data-bs-toggle]:focus,
 img[data-bs-toggle]:hover,
-img[data-bs-toggle]:focus{
+img[data-bs-toggle]:active{
     opacity: 0.5;
 }
 
