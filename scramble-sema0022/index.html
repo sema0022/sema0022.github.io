@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Welcome to Scramble.</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Scramble</h1>
+  </header>
+  <div id="app">
+    <div class="score">
+      <p class="points">
+        <span>{{this.game.points}}</span> Points
+      </p>
+      <p class="strikes">
+        <span>{{this.game.strikes}}</span> Strikes
+      </p>
+    </div>
+    <p class="message" 
+      :style="{'background-color': this.game.messageColor}">
+      {{this.game.message}}
+    </p>
+    <p class="word">{{scrambled}}</p>
+
+    <form @submit.prevent="guessWord()">
+      <!-- input is disabled when game is over -->
+      <input type="text" 
+            v-model="game.guess" 
+            :disabled="this.game.playAgain">
+    </form>
+    <div>
+      <!-- pass button is disabled if no passes OR if game is over -->
+      <button class="pass"
+              @click="pass()" 
+              :disabled="!this.game.passes || this.game.playAgain">
+        Passes Left: {{this.game.passes}}
+      </button>
+    </div>
+    <!-- Play Again button is only displayed when game is over -->
+    <div v-if="this.game.playAgain">
+      <button class="play"  
+              @click="restartGame()">
+        Play Again
+      </button>
+    </div>
+  </div>
+  <script src="scramble.js"></script>
+</body>
+
+</html>
