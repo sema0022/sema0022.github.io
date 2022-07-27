@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invoice Manager</title>
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <!-- Animate.css CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+  <div id="app" class="mb-5">
+    <div class="sticky-top text-bg-dark mb-4 py-4 border-bottom border-primary border-3">
+      <div class="container">
+        <h1 class="h2">Invoice Manager</h1>
+        <div class="row">
+
+          <!-- Filter by status -->
+          <label class="form-label" for="filter-status">Filter by status</label>
+          <div class="col-10 col-sm-6 col-md-4 col-lg-3 mb-3">
+            <select class="form-select" name="filter-status" id="filter-status"
+              v-model="selected">
+                <option value="All">All</option>
+                <option value="Draft">Draft</option>
+                <option value="Pending">Pending</option>
+                <option value="Paid">Paid</option>
+            </select>
+          </div>
+
+          <!-- New Invoice button and form -->
+          <div class="col-md-6 col-lg-4">
+            <!-- Button disappears when clicked and form transitions in -->
+            <button type="button" class="btn btn-primary"
+              @click="show = !show" 
+              v-show="!show">
+                New Invoice
+            </button>
+
+            <!-- When submitted, creates new invoice with user input and is hidden -->
+            <!-- When cancelled, clears inputs and is hidden -->
+            <transition
+              enter-active-class="animate__animated animate__bounceInDown animate__fast">
+                <form class="border border-primary rounded p-3"
+                  v-show="show" 
+                  @submit.prevent="newInvoice">
+                    <h2 class="h4">New Invoice</h2>
+                    <label class="form-label" for="add-client">Client Name</label>
+                    <input class="form-control mb-3" type="text" name="add-client" id="add-client"
+                      v-model="client">
+                    <label class="form-label" for="add-amount">Amount</label>
+                    <input class="form-control mb-3" type="number" name="add-amount" id="add-amount"
+                      v-model="amount">
+                    <label class="form-label" for="add-status">Invoice Status</label>
+                    <select class="form-select mb-3" name="add-status" id="add-status"
+                      v-model="status">
+                        <option value="Draft">Draft</option>
+                        <option value="Pending">Pending</option>
+                        <option value="Paid">Paid</option>
+                    </select>
+                    <button type="submit" class="btn btn-primary me-2">
+                        Create
+                    </button>
+                    <button type="button" class="btn btn-secondary"
+                      @click="clearForm">
+                        Cancel
+                    </button>
+                </form>
+            </transition>
+          </div>   
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Filtered invoices -->
+      <invoice-item
+        v-for="invoice in filteredInvoices"
+        :key="invoice.number"
+        :number="invoice.number"
+        :initial-client="invoice.client"
+        :initial-amount="invoice.amount"
+        :initial-status="invoice.status"
+        @update-invoice="updateInvoice"
+        @delete-invoice="deleteInvoice">
+      </invoice-item>
+    </div>
+  </div>
+
+  <script src="invoices.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
