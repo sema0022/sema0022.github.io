@@ -1,0 +1,144 @@
+/* Box-sizing code to calculate sizes more intuitively (referenced from IMDAC) */
+html{
+    box-sizing: border-box;
+} 
+*,
+*:before,
+*:after{
+    box-sizing: inherit;
+}
+
+/* On smaller screens, the base font is 14px */
+html{
+    height: 100%;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+/* Makes sure the background image, set with JavaScript, covers the whole screen */
+/* Flex helps to center the time display vertically */
+body{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem;
+}
+
+/* Helps to toggle visibility of settings and full date, with help of JavaScript */
+.hidden{
+    visibility: hidden;
+}
+
+/* Prevents settings panel from pushing time display down. Opens over top of it instead. */
+header{
+    position: fixed;
+    filter: drop-shadow(0 0 10px black);
+    z-index: 1;
+}
+
+/* Styles a panel for the settings */
+#settings{
+    background-color: white;
+    border: 2px solid black;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+}
+
+label{
+    display: inline-block;
+    padding: 0.5rem 0;
+}
+
+#format-selection label{
+    margin-right: 0.5rem;
+}
+
+#colour-selection label,
+#format-selection div{
+    font-weight: bold;
+}
+
+/* Moves colour dropdown below its label, taking up less horizontal space */
+#colour-selection{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+
+#colours{
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+}
+
+/* Centers main time display. Adds drop-shadow so it stands out if the APOD is light */
+main{
+    align-self: center;
+    text-align: center;
+    margin: 0 auto;
+    filter: drop-shadow(0 0 10px black);
+}
+
+#greeting{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 1.5rem;
+}
+
+/* Makes time display the biggest element on the page */
+#time-display{
+    font-size: 4.8rem;
+}
+
+#reveal-date-btn{
+    margin: 2rem 0;
+}
+
+/* Styles regular state of toggle buttons */
+#reveal-date-btn,
+#settings-btn{
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 1rem;
+    padding: 0.7rem 0.7rem 0.5rem 0.7rem;
+}
+/* Their colours are inverted on hover */
+#reveal-date-btn:hover,
+#settings-btn:hover{
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+}
+
+/* Styles regular state of save button */
+#save-btn{
+    color: white;
+    background-color: black;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+}
+/* Its colour lightens on hover */
+#save-btn:hover{
+    background-color: rgb(56, 56, 56);
+}
+
+#full-date{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* When the screen width is large enough, the size of the time display can be increased further */
+@media screen and (min-width: 850px){
+    html{
+      font-size: 16px;
+    }
+
+    #time-display{
+        font-size: 7rem;
+    }
+  }
